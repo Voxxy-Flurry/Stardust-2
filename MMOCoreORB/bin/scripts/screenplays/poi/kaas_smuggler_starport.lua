@@ -45,8 +45,8 @@ function kaas_smuggler_starport:spawnMobiles()
 
 	spawnMobile("kaas", "rodian_thug", 200, 2866.6, 124, 3874.7, 121, 0)
 	spawnMobile("kaas", "rodian_thug", 200, 2859.3, 125, 3866, 121, 0)
-	
 	spawnMobile("kaas", "junk_dealer", 200, 2831.9, 126.3, 3881.3, 104, 0)
+	spawnMobile("kaas", "informant_npc_lvl_3", 1, -4234.4, 79.1, 7111.9, -17, 0)
 	
 
 end
