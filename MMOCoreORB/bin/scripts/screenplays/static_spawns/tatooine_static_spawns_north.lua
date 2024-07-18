@@ -126,7 +126,7 @@ function TatooineStaticSpawnsNorthScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "scavenger", 300, -1493, 26.5, 990.2, 150, 0)
 	
 	--Krayts Spynet
-	spawnMobile("tatooint", "informant_npc_lvl_3", 1, 5935.2, 21.3, 2806.9, -124, 0)
+	spawnMobile("tatooine", "informant_npc_lvl_3", 1, 5935.2, 21.3, 2806.9, -124, 0)
 
 	--3 small Buildings (-170,1930)
 	spawnMobile("tatooine", "tusken_commoner", 300, -169.3, 152.2, 1931.0, -122, 0)
