@@ -72,8 +72,7 @@ DantooineMiningOutpostScreenPlay = CityScreenPlay:new {
 		{"kess_yarrow",60,-623.484,3,2481.77,149.192,0, "neutral"},
 		{"rane_yarrow",60,-625.457,3,2479.41,86.8842,0, "neutral"},
 		{"fern_yarrow",60,-625.684,3,2481.19,119.665,0, "neutral"},
-		{"planet_record_keeper_dantooine", 60, -604.016, 3, 2538.15, 200.426, 0, ""},
-		{"informant_npc_lvl_3", 1, -4365.2, 1.9, 7109.9, 178, 0},  -- Stoner Spynet
+		{"planet_record_keeper_dantooine", 60, -604.016, 3, 2538.15, 200.426, 0, ""}
 	}
 }
 
