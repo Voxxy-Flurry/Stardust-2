@@ -121,8 +121,7 @@ TatooineWayfarScreenPlay = CityScreenPlay:new {
 		{"trainer_scout",0,-5051.46,75,-6629.48,7,0, ""},
 		{"trainer_unarmed",0,-5055,75,-6633,310,0, "npc_sitting_ground"},
 		{"junk_dealer", 1, -5242.27, 75, -6495.05, 138, 0, ""},
-		{"junk_dealer", 1, -5132.78, 75, -6585.28, 72, 0, ""},
-		{"informant_npc_lvl_3", 1, 5935.2, 21.3, 2806.9, -124, 0},  --Krayts Landing Spynet
+		{"junk_dealer", 1, -5132.78, 75, -6585.28, 72, 0, ""}
 	}
 }
 
