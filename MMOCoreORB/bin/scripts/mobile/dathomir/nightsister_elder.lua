@@ -13,7 +13,7 @@ nightsister_elder = Creature:new {
 	baseHAM = 321000,
 	baseHAMmax = 392000,
 	armor = 1,
-	resists = {85,85,85,85,85,85,85,85,-1},
+	resists = {85,85,85,85,85,85,85,85,60},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -34,16 +34,41 @@ nightsister_elder = Creature:new {
 			groups = {
 				{group = "power_crystals", chance = 800000},
 				{group = "nightsister_rare", chance = 2200000},
-				{group = "junk", chance = 500000},
-				{group = "armor_attachments", chance = 750000},
-				{group = "clothing_attachments", chance = 750000},
-				{group = "pistols", chance = 800000},
-				{group = "rifles", chance = 800000},
-				{group = "carbines", chance = 900000},
-				{group = "melee_weapons", chance = 2000000},
+				{group = "junk", chance = 1700000},
+				{group = "armor_attachments", chance = 1600000},
+				{group = "clothing_attachments", chance = 1600000},
+				{group = "ranged_weapons", chance = 800000},
+				{group = "melee_weapons", chance = 800000},
 				{group = "wearables_scarce", chance = 500000}
-			}
-		}
+			},
+				lootChance = 10000000,
+		},
+		{
+			groups = {
+				{group = "power_crystals", chance = 800000},
+				{group = "nightsister_rare", chance = 2200000},
+				{group = "junk", chance = 1700000},
+				{group = "armor_attachments", chance = 1600000},
+				{group = "clothing_attachments", chance = 1600000},
+				{group = "ranged_weapons", chance = 800000},
+				{group = "melee_weapons", chance = 800000},
+				{group = "wearables_scarce", chance = 500000}
+			},
+				lootChance = 7500000,
+		},
+		{
+			groups = {
+				{group = "power_crystals", chance = 800000},
+				{group = "nightsister_rare", chance = 2200000},
+				{group = "junk", chance = 1700000},
+				{group = "armor_attachments", chance = 1600000},
+				{group = "clothing_attachments", chance = 1600000},
+				{group = "ranged_weapons", chance = 800000},
+				{group = "melee_weapons", chance = 800000},
+				{group = "wearables_scarce", chance = 500000}
+			},
+				lootChance = 3500000,
+		},
 	},
 
 	-- Primary and secondary weapon should be different types (rifle/carbine, carbine/pistol, rifle/unarmed, etc)
