@@ -33,17 +33,42 @@ spiderclan_elder = Creature:new {
 		{
 			groups = {
 				{group = "junk", chance = 1500000},
-				{group = "power_crystals", chance = 500000},
-				{group = "color_crystals", chance = 500000},
-				{group = "armor_attachments", chance = 600000},
-				{group = "clothing_attachments", chance = 600000},
-				{group = "melee_weapons", chance = 2800000},
-				{group = "pistols", chance = 1000000},
-				{group = "rifles", chance = 1000000},
-				{group = "carbines", chance = 1000000},
+				{group = "power_crystals", chance = 1500000},
+				{group = "color_crystals", chance = 1500000},
+				{group = "armor_attachments", chance = 1500000},
+				{group = "clothing_attachments", chance = 1500000},
+				{group = "melee_weapons", chance = 1000000},
+				{group = "ranged_weapons", chance = 1000000},
 				{group = "wearables_scarce", chance = 500000}
-			}
-		}
+			},
+				lootChance = 10000000,
+		},
+		{
+			groups = {
+				{group = "junk", chance = 1500000},
+				{group = "power_crystals", chance = 1500000},
+				{group = "color_crystals", chance = 1500000},
+				{group = "armor_attachments", chance = 1500000},
+				{group = "clothing_attachments", chance = 1500000},
+				{group = "melee_weapons", chance = 1000000},
+				{group = "ranged_weapons", chance = 1000000},
+				{group = "wearables_scarce", chance = 500000}
+			},
+				lootChance = 7500000,
+		},
+		{
+			groups = {
+				{group = "junk", chance = 1500000},
+				{group = "power_crystals", chance = 1500000},
+				{group = "color_crystals", chance = 1500000},
+				{group = "armor_attachments", chance = 1500000},
+				{group = "clothing_attachments", chance = 1500000},
+				{group = "melee_weapons", chance = 1000000},
+				{group = "ranged_weapons", chance = 1000000},
+				{group = "wearables_scarce", chance = 500000}
+			},
+				lootChance = 3500000,
+		},
 	},
 
 	-- Primary and secondary weapon should be different types (rifle/carbine, carbine/pistol, rifle/unarmed, etc)
