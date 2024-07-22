@@ -237,6 +237,20 @@ function ElysiumVisionScreenPlay:spawnMobiles()
   pNpc = spawnMobile("elysium", "clone_trooper_501st",60,34.0,33.0,-93.9,85,590000055)
   self:setMoodString(pNpc, "neutral")
   
+  pNpc = spawnMobile("elysium", "light_jedi_youngling",60,-46.3,33.0,-93.7,80,590000061)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "light_jedi_youngling",60,-45.3,33.0,-99,-150,590000061)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "light_jedi_youngling",60,-46.2,33.0,-87.4,-44,590000061)
+  self:setMoodString(pNpc, "neutral")
+  
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,-30.9,33.0,-94,81,590000061)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,-31.5,33.0,-92,96,590000061)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,-31.0,33.0,-95.2,85,590000061)
+  self:setMoodString(pNpc, "neutral")
+  
   pNpc = spawnMobile("elysium", "light_jedi_padawan_b",60,1.6,27.0,-68.8,-178,590000052)
   self:setMoodString(pNpc, "neutral")
   pNpc = spawnMobile("elysium", "light_jedi_padawan_g",60,-1.6,27.0,-70.0,168,590000052)
@@ -296,8 +310,31 @@ function ElysiumVisionScreenPlay:spawnMobiles()
   pNpc = spawnMobile("elysium", "anakin_skywalker",60,27.9,23.0,-42.1,0,590000049)
   self:setMoodString(pNpc, "neutral")
   
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,8.1,19.0,1.7,-3,590000047)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,-7.3,19.0,1.7,-3,590000047)
+  self:setMoodString(pNpc, "neutral")
   
+  pNpc = spawnMobile("elysium", "light_jedi_padawan_g",60,-44.7,19.0,29.8,3,590000047)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,-41.0,19.0,19.5,-12,590000047)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,-43.2,19.0,19.2,-14,590000047)
+  self:setMoodString(pNpc, "neutral")
   
+  pNpc = spawnMobile("elysium", "light_jedi_padawan_b",60,-31.2,19.0,10.7,-139,590000047)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,-37.1,19.0,8.0,65,590000047)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,-33.5,19.0,4.2,28,590000047)
+  self:setMoodString(pNpc, "neutral")
+  
+  pNpc = spawnMobile("elysium", "light_jedi_padawan_g",60,16.6,19.0,2.6,-139,590000047)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,19.3,19.0,-3.4,-28,590000047)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,25.6,19.0,-1.2,-73,590000047)
+  self:setMoodString(pNpc, "neutral")
 
   
 end
