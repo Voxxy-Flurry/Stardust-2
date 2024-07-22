@@ -122,13 +122,13 @@ dant_disciple = Creature:new {
 			groups = {
 				{group = "acid_vibro_unit", chance = 10000000}
 			},
-				lootChance = 1500000,
+				lootChance = 500000,
 		},
 		{
 			groups = {
 				{group = "experimental_spider", chance = 10000000}
 			},
-				lootChance = 1500000,
+				lootChance = 500000,
 		},
 	},
 	primaryWeapon = "dark_jedi_weapons_gen4",
