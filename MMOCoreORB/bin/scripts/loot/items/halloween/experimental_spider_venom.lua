@@ -6,8 +6,8 @@ experimental_spider_venom = {
 	customObjectName = "Experimental Spider Venom",
 	directObjectTemplate = "object/tangible/component/chemistry/spider_venom.iff",
 	craftingValues = {
-		{"power",135,250,0},
-		{"useCount",1,11,0},
+		{"power",135,210,0},
+		{"useCount",1,5,0},
 	},
 	customizationStringNames = {},
 	customizationValues = {}

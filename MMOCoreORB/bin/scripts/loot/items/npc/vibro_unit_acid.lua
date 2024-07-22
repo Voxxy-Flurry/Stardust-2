@@ -6,8 +6,8 @@ vibro_unit_acid = {
 	customObjectName = "Acid-Coated Vibro Unit",
 	directObjectTemplate = "object/tangible/component/weapon/vibro_unit_advanced.iff",
 	craftingValues = {
-		{"mindamage",34,75,0},
-		{"maxdamage",43,125,0},
+		{"mindamage",34,50,0},
+		{"maxdamage",43,100,0},
 		{"attackspeed",1,0,1},
 		{"woundchance",10,25,0},
 		{"hitpoints",100,500,0},
