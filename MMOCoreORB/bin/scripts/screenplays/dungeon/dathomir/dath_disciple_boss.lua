@@ -92,6 +92,7 @@ function dath_discipleScreenplay:npcDamageObserver(bossObject, playerObject, dam
 
 	if (((health <= (maxHealth * 0.1))) and readData("dath_discipleScreenplay:spawnState") == 5) then
 				spatialChat(bossObject, "No .. I was shaped .. by the Masters...")
+				self:awardToken(bossObject)
       			writeData("dath_discipleScreenplay:spawnState",6)
 				createEvent(0 * 1000, "dath_discipleScreenplay", "finisher", playerObject, "")  		
       			CreatureObject(bossObject):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
@@ -174,7 +175,36 @@ function dath_discipleScreenplay:spawnSupport(bossObject, playerObject)
 	local pGuard2 = spawnMobile("dathomir", "nightsister_ascendant", -1, bossX, bossZ, bossY, 141, cell) 
 		CreatureObject(pGuard2):engageCombat(playerObject)
 
-end  
+end
+
+function dath_discipleScreenplay:awardToken(bossObject)
+    if bossObject == nil then
+        return
+    end
+
+    local playerTable = SceneObject(bossObject):getPlayersInRange(100)
+    if playerTable == nil then
+        return
+    end
+
+    if #playerTable > 0 then
+        for i = 1, #playerTable do
+            local currentPlayer = playerTable[i]
+            if currentPlayer ~= nil then
+                local pInventory = SceneObject(currentPlayer):getSlottedObject("inventory")
+                if pInventory ~= nil then
+                    if not SceneObject(pInventory):isContainerFullRecursive() then
+                        giveItem(pInventory, "object/tangible/item/stardust_pvp_token_generic.iff", -1)
+                    else
+                        CreatureObject(currentPlayer):sendSystemMessage("You did not receive a boss token because your inventory is full.")
+                    end
+                else
+                    CreatureObject(currentPlayer):sendSystemMessage("You did not receive a boss token because your inventory is full.")
+                end
+            end
+        end
+    end
+end
 
 function dath_discipleScreenplay:bossDead(pBoss)
 	local creature = CreatureObject(pBoss)

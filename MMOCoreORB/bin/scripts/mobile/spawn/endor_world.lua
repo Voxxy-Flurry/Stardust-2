@@ -1627,7 +1627,7 @@ endor_world = {
 			minDifficulty = 76,
 			maxDifficulty = 107,
 			numberToSpawn = 0,
-			weighting = 10,
+			weighting = 20,
 			size = 25
 		},
 	}
