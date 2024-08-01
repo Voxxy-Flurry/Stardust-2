@@ -417,6 +417,7 @@ function the_collector_spawn:npcDamageObserver(bossObject, playerObject, damage)
 
 	if (((health <= (maxHealth * 0.1))) and readData("the_collector_spawn:spawnState") == 4) then
 				spatialChat(bossObject, "Ughhhhhhh")
+				self:awardToken(bossObject)
       			writeData("the_collector_spawn:spawnState",5)
 				createEvent(0 * 1000, "the_collector_spawn", "finisher", playerObject, "")  		
       			CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
@@ -484,6 +485,35 @@ function the_collector_spawn:finisher(playerObject)
 	local trapDmg = getRandomNumber(2800, 4000)
 		CreatureObject(playerObject):inflictDamage(playerObject, 0, trapDmg, 1)
       	CreatureObject(playerObject):playEffect("clienteffect/item_gas_leak_trap_on.cef", "")
+end
+
+function the_collector_spawn:awardToken(bossObject)
+    if bossObject == nil then
+        return
+    end
+
+    local playerTable = SceneObject(bossObject):getPlayersInRange(100)
+    if playerTable == nil then
+        return
+    end
+
+    if #playerTable > 0 then
+        for i = 1, #playerTable do
+            local currentPlayer = playerTable[i]
+            if currentPlayer ~= nil then
+                local pInventory = SceneObject(currentPlayer):getSlottedObject("inventory")
+                if pInventory ~= nil then
+                    if not SceneObject(pInventory):isContainerFullRecursive() then
+                        giveItem(pInventory, "object/tangible/item/stardust_pvp_token_generic.iff", -1)
+                    else
+                        CreatureObject(currentPlayer):sendSystemMessage("You did not receive a boss token because your inventory is full.")
+                    end
+                else
+                    CreatureObject(currentPlayer):sendSystemMessage("You did not receive a boss token because your inventory is full.")
+                end
+            end
+        end
+    end
 end
 
 function the_collector_spawn:bossDead(pBoss)

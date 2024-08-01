@@ -82,6 +82,7 @@ function imperial_remnantScreenplay:npcDamageObserver(bossObject, playerObject, 
 
 	if (((health <= (maxHealth * 0.1))) and readData("imperial_remnantScreenplay:spawnState") == 4) then
 				spatialChat(bossObject, "If I'm going to die.. you're coming with me, scum..")
+				self:awardToken(bossObject)
       			writeData("imperial_remnantScreenplay:spawnState",5)
 				createEvent(0 * 1000, "imperial_remnantScreenplay", "finisher", playerObject, "")  
 				CreatureObject(playerObject):sendSystemMessage("An Imperial Detonator rolls out of Captain Zahn's hand and falls to the floor.")			
@@ -170,6 +171,35 @@ function imperial_remnantScreenplay:spawnSupport(bossObject, playerObject)
 		CreatureObject(pGuard4):engageCombat(playerObject)
 
 end  
+
+function imperial_remnantScreenplay:awardToken(bossObject)
+    if bossObject == nil then
+        return
+    end
+
+    local playerTable = SceneObject(bossObject):getPlayersInRange(100)
+    if playerTable == nil then
+        return
+    end
+
+    if #playerTable > 0 then
+        for i = 1, #playerTable do
+            local currentPlayer = playerTable[i]
+            if currentPlayer ~= nil then
+                local pInventory = SceneObject(currentPlayer):getSlottedObject("inventory")
+                if pInventory ~= nil then
+                    if not SceneObject(pInventory):isContainerFullRecursive() then
+                        giveItem(pInventory, "object/tangible/item/stardust_pvp_token_generic.iff", -1)
+                    else
+                        CreatureObject(currentPlayer):sendSystemMessage("You did not receive a boss token because your inventory is full.")
+                    end
+                else
+                    CreatureObject(currentPlayer):sendSystemMessage("You did not receive a boss token because your inventory is full.")
+                end
+            end
+        end
+    end
+end
 
 function imperial_remnantScreenplay:bossDead(pBoss)
 	local creature = CreatureObject(pBoss)
