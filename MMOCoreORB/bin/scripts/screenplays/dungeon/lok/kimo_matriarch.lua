@@ -140,7 +140,7 @@ function kimo_matriarchScreenplay:rend(playerObject)
 		CreatureObject(playerObject):inflictDamage(playerObject, 0, trapDmg, 1)
 end
 
-function kimogila_matriarchScreenplay:awardToken(bossObject)
+function kimo_matriarchScreenplay:awardToken(bossObject)
     if bossObject == nil then
         return
     end
