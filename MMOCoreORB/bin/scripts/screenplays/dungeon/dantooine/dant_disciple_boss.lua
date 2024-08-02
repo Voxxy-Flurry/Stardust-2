@@ -12,7 +12,9 @@ end
 
 
 function dant_discipleScreenplay:spawnMobiles()
-		local pBoss = spawnMobile("dantooine", "dant_disciple",-1,-91.6,-100.4,-93.6,-178,529333)
+		local pBoss = spawnMobile("dantooine", "dant_disciple",-1,4194.7,9,5201,25,15098000)
+		spawnMobile("dantooine", "janta_scion",900,4198,9,5198,24,15098000)
+		spawnMobile("dantooine", "janta_scion",900,4189.8,9,5202.1,24,15098000)
 		local creature = CreatureObject(pBoss)
 		createObserver(DAMAGERECEIVED, "dant_discipleScreenplay", "npcDamageObserver", pBoss)    
 		createObserver(OBJECTDESTRUCTION, "dant_discipleScreenplay", "bossDead", pBoss)

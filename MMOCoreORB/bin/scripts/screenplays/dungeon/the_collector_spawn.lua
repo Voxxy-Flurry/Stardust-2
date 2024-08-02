@@ -219,7 +219,7 @@ function the_collector_spawn:spawnMobiles()
 	local spawn_int = math.random(1,3)
 	
 	if spawn_int == 1 then
-		local pBoss = spawnMobile("dantooine", "the_collector", -1, 4244.7, 8, 5178.2, -48, 37005000)
+		local pBoss = spawnMobile("dantooine", "the_collector", -1, -7067.4, 9.2, -3460.9, -36, 37005000)
 		local creature = CreatureObject(pBoss)
 		createObserver(DAMAGERECEIVED, "the_collector_spawn", "npcDamageObserver", pBoss)    
 		createObserver(OBJECTDESTRUCTION, "the_collector_spawn", "bossDead", pBoss)
