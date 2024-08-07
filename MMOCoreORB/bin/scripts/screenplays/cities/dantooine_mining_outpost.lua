@@ -87,6 +87,7 @@ function DantooineMiningOutpostScreenPlay:start()
 end
 
 function DantooineMiningOutpostScreenPlay:spawnMobiles()
+	spawnSceneObject(self.planet, "object/tangible/terminal/terminal_event_buffs.iff", -4401.9, 2.1, 7066.6, 87, 0)
 	local mobiles = self.mobiles
 
 	for i = 1, #mobiles, 1 do

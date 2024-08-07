@@ -102,7 +102,8 @@ function LohthalCityScreenPlay:spawnMobiles()
 	local pNpc = spawnMobile("lothal", "surgical_droid_21b",60,3.1,0.1,11.5,0,0)
 	self:setMoodString(pNpc, "neutral")
 	
-  
+	--Sanctum Spynet
+	spawnMobile("lothal", "informant_npc_lvl_3",60,60.6,29.6,3503.6,78,0)
   
 	-- Cantina
 	
