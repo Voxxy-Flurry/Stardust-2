@@ -81,4 +81,5 @@ function EndorSmugglerOutpostScreenPlay:spawnMobiles()
 		self:setMoodString(pNpc, "npc_sitting_chair")
 		CreatureObject(pNpc):setOptionsBitmask(0)
 	end
+	spawnSceneObject(self.planet, "object/tangible/terminal/terminal_event_buffs.iff", -3173.6, 200.0, 5836.1, 0, -88)
 end
