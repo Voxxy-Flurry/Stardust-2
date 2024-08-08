@@ -35,31 +35,31 @@ function endor_wb:npcDamageObserver(bossObject, playerObject, damage)
 
 	if (((health <= (maxHealth * 0.9))) and readData("endor_wb:spawnState") == 0) then
 			writeData("endor_wb:spawnState",1)
-			--createEvent(0 * 1000, "endor_wb", "knockdown", playerObject, "")
+			createEvent(0 * 1000, "endor_wb", "knockdown", playerObject, "")
  			createEvent(5 * 1000, "endor_wb", "earthquake", playerObject, "")
-			--createEvent(15 * 1000, "endor_wb", "tremor", playerObject, "")
-			--createEvent(20 * 1000, "endor_wb", "tremor", playerObject, "")
+			createEvent(15 * 1000, "endor_wb", "tremor", playerObject, "")
+			createEvent(20 * 1000, "endor_wb", "tremor", playerObject, "")
 			CreatureObject(playerObject):sendSystemMessage("The Gorax slams his feet into the ground, sending tremors and knocking you down!")			
       		CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
 	end
 
 	if (((health <= (maxHealth * 0.7))) and readData("endor_wb:spawnState") == 1) then
       		writeData("endor_wb:spawnState",2)
-			--createEvent(0 * 1000, "endor_wb", "knockdown", playerObject, "")
+			createEvent(0 * 1000, "endor_wb", "knockdown", playerObject, "")
  			createEvent(5 * 1000, "endor_wb", "tremor", playerObject, "")
-			--createEvent(15 * 1000, "endor_wb", "tremor_mid", playerObject, "")
-			--createEvent(20 * 1000, "endor_wb", "tremor_mid", playerObject, "")       
+			createEvent(15 * 1000, "endor_wb", "tremor_mid", playerObject, "")
+			createEvent(20 * 1000, "endor_wb", "tremor_mid", playerObject, "")       
       			CreatureObject(playerObject):sendSystemMessage("The ground feels softer under barrage of the Gorax")
       			CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
 	end
 
 	if (((health <= (maxHealth * 0.5))) and readData("endor_wb:spawnState") == 2) then
 			writeData("endor_wb:spawnState",3)
-			--createEvent(0 * 1000, "endor_wb", "knockdown", playerObject, "")
+			createEvent(0 * 1000, "endor_wb", "knockdown", playerObject, "")
 			createEvent(0 * 1000, "endor_wb", "earthquake", playerObject, "")
- 			--createEvent(5 * 1000, "endor_wb", "tremor_mid", playerObject, "")
-			--createEvent(15 * 1000, "endor_wb", "tremor_mid", playerObject, "")
-			--createEvent(20 * 1000, "endor_wb", "tremor_mid", playerObject, "") 
+ 			createEvent(5 * 1000, "endor_wb", "tremor_mid", playerObject, "")
+			createEvent(15 * 1000, "endor_wb", "tremor_mid", playerObject, "")
+			createEvent(20 * 1000, "endor_wb", "tremor_mid", playerObject, "") 
 			
       		CreatureObject(playerObject):sendSystemMessage("The ground gives way to a volcanic geyser! Move away now!")
       		CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
@@ -67,11 +67,11 @@ function endor_wb:npcDamageObserver(bossObject, playerObject, damage)
 
 	if (((health <= (maxHealth * 0.3))) and readData("endor_wb:spawnState") == 3) then
       		writeData("endor_wb:spawnState",4)
-			--createEvent(20 * 1000, "endor_wb", "knockdown", playerObject, "")
+			createEvent(20 * 1000, "endor_wb", "knockdown", playerObject, "")
 			createEvent(0 * 1000, "endor_wb", "earthquake", playerObject, "")
- 			--createEvent(5 * 1000, "endor_wb", "tremor_mid", playerObject, "")
-			--createEvent(15 * 1000, "endor_wb", "tremor_mid", playerObject, "")
-			--createEvent(20 * 1000, "endor_wb", "tremor_mid", playerObject, "")     
+ 			createEvent(5 * 1000, "endor_wb", "tremor_mid", playerObject, "")
+			createEvent(15 * 1000, "endor_wb", "tremor_mid", playerObject, "")
+			createEvent(20 * 1000, "endor_wb", "tremor_mid", playerObject, "")     
       		CreatureObject(playerObject):sendSystemMessage("Another breach beneath your feet!")
       		CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
 	end
@@ -176,7 +176,7 @@ function endor_wb:earthquakeDamage(pSceneObject)
 	local playerTable = SceneObject(pSceneObject):getPlayersInRange(self.earthquakeRadius)
 
 	if (playerTable == nil) then
-		createEvent(3 * 1000, self.scriptName, "earthquakeDamage", pSceneObject, "")
+		createEvent(2 * 1000, self.scriptName, "earthquakeDamage", pSceneObject, "")
 		return
 	end
 
@@ -189,7 +189,7 @@ function endor_wb:earthquakeDamage(pSceneObject)
 		end
 	end
 
-	createEvent(3 * 1000, self.scriptName, "earthquakeDamage", pSceneObject, "")
+	createEvent(2 * 1000, self.scriptName, "earthquakeDamage", pSceneObject, "")
 end
 
 function endor_wb:destroyObject(pObject)
