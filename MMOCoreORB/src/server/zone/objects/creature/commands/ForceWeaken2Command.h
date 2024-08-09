@@ -11,7 +11,7 @@
 class ForceWeaken2Command : public ForcePowersQueueCommand {
 protected:
 	String skillName = "forceweaken2";
-	int delay = 60;
+	int delay = 45;
 public:
 
 	ForceWeaken2Command(const String& name, ZoneProcessServer* server)
@@ -65,26 +65,28 @@ public:
 				ManagedReference<Buff*> buff = nullptr;
 
 				if (creature->isPlayerCreature())
-					buff = new Buff(creatureTarget, BuffCRC::JEDI_FORCEWEAKEN2, 30, BuffType::JEDI);
+					buff = new Buff(creatureTarget, BuffCRC::JEDI_FORCEWEAKEN2, 20, BuffType::JEDI);
 				else
 					buff = new Buff(creatureTarget, BuffCRC::JEDI_FORCEWEAKEN2, 15, BuffType::JEDI);
 
 
 				if (buff == nullptr)
 					return GENERALERROR;
-								
-				Locker locker(buff);
-				int hamStrength =  -1 * creatureTarget->getMaxHAM(CreatureAttribute::HEALTH) * .3;
-				buff->setAttributeModifier(CreatureAttribute::HEALTH, hamStrength);
-				hamStrength =  -1 * creatureTarget->getMaxHAM(CreatureAttribute::ACTION) * .3;
-				buff->setAttributeModifier(CreatureAttribute::ACTION, hamStrength);
-
-				buff->setSkillModifier("weaken_delay", 5);
-
-				creatureTarget->addBuff(buff);
-				creature->updateCooldownTimer(skillName, delay * 1000);
-
-				CombatManager::instance()->broadcastCombatSpam(creature, creatureTarget, NULL, 0, "cbt_spam", combatSpam + "_hit", 1);
+				
+				if (creatureTarget->getHAM(CreatureAttribute::HEALTH) < (creatureTarget->getMaxHAM(CreatureAttribute::HEALTH) * 0.75)) {
+						creature->sendSystemMessage("Your target is already weakened");
+						return GENERALERROR;
+						} else {
+								Locker locker(buff);
+								int hamStrength = -1 * creatureTarget->getMaxHAM(CreatureAttribute::HEALTH) * 0.25;
+								buff->setAttributeModifier(CreatureAttribute::HEALTH, hamStrength);
+								hamStrength = -1 * creatureTarget->getMaxHAM(CreatureAttribute::ACTION) * 0.25;
+								buff->setAttributeModifier(CreatureAttribute::ACTION, hamStrength);
+								buff->setSkillModifier("weaken_delay", 5);
+								creatureTarget->addBuff(buff);
+								creature->updateCooldownTimer(skillName, delay * 1000);
+								CombatManager::instance()->broadcastCombatSpam(creature, creatureTarget, NULL, 0, "cbt_spam", combatSpam + "_hit", 1);
+						}
 				
 			}
 
