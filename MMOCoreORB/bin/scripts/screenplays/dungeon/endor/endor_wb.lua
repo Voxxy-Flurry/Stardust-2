@@ -2,7 +2,7 @@ endor_wb = ScreenPlay:new {
 	numberOfActs = 1,
 	scriptName = "endor_wb",
   	planet = "endor",
-	earthquakeRadius = 5,
+	earthquakeRadius = 7.5,
 }
 registerScreenPlay("endor_wb", true)
 
@@ -46,6 +46,9 @@ function endor_wb:npcDamageObserver(bossObject, playerObject, damage)
 	if (((health <= (maxHealth * 0.7))) and readData("endor_wb:spawnState") == 1) then
       		writeData("endor_wb:spawnState",2)
 			createEvent(0 * 1000, "endor_wb", "knockdown", playerObject, "")
+			createEvent(5 * 1000, "endor_wb", "earthquake", playerObject, "")
+			createEvent(13 * 1000, "endor_wb", "knockdown", playerObject, "")
+			createEvent(15 * 1000, "endor_wb", "earthquake", playerObject, "")
  			createEvent(5 * 1000, "endor_wb", "tremor", playerObject, "")
 			createEvent(15 * 1000, "endor_wb", "tremor_mid", playerObject, "")
 			createEvent(20 * 1000, "endor_wb", "tremor_mid", playerObject, "")       
@@ -61,6 +64,9 @@ function endor_wb:npcDamageObserver(bossObject, playerObject, damage)
  			createEvent(5 * 1000, "endor_wb", "tremor_mid", playerObject, "")
 			createEvent(15 * 1000, "endor_wb", "tremor_mid", playerObject, "")
 			createEvent(20 * 1000, "endor_wb", "tremor_mid", playerObject, "") 
+			createEvent(25 * 1000, "endor_wb", "earthquake", playerObject, "")
+			createEvent(45 * 1000, "endor_wb", "earthquake", playerObject, "")
+			createEvent(65 * 1000, "endor_wb", "earthquake", playerObject, "")
 			
       		CreatureObject(playerObject):sendSystemMessage("The ground gives way to a volcanic geyser! Move away now!")
       		CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
@@ -73,7 +79,11 @@ function endor_wb:npcDamageObserver(bossObject, playerObject, damage)
 			createEvent(17 * 1000, "endor_wb", "earthquake", playerObject, "")
  			createEvent(5 * 1000, "endor_wb", "tremor_mid", playerObject, "")
 			createEvent(15 * 1000, "endor_wb", "tremor_mid", playerObject, "")
-			createEvent(20 * 1000, "endor_wb", "tremor_mid", playerObject, "")     
+			createEvent(20 * 1000, "endor_wb", "tremor_mid", playerObject, "") 
+			createEvent(20 * 1000, "endor_wb", "tremor_mid", playerObject, "") 
+			createEvent(25 * 1000, "endor_wb", "earthquake", playerObject, "")
+			createEvent(45 * 1000, "endor_wb", "earthquake", playerObject, "")
+			createEvent(65 * 1000, "endor_wb", "earthquake", playerObject, "")			
       		CreatureObject(playerObject):sendSystemMessage("Another breach beneath your feet!")
       		CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
 	end
@@ -178,7 +188,7 @@ function endor_wb:earthquakeDamage(pSceneObject)
 	local playerTable = SceneObject(pSceneObject):getPlayersInRange(self.earthquakeRadius)
 
 	if (playerTable == nil) then
-		createEvent(2 * 1000, self.scriptName, "earthquakeDamage", pSceneObject, "")
+		createEvent(1 * 1000, self.scriptName, "earthquakeDamage", pSceneObject, "")
 		return
 	end
 
@@ -187,7 +197,7 @@ function endor_wb:earthquakeDamage(pSceneObject)
 		local curDist = SceneObject(playerObject):getDistanceTo(pSceneObject)
 
 		if (curDist <= self.earthquakeRadius) then
-			CreatureObject(playerObject):addDotState(pSceneObject, BLEEDING, 250, HEALTH, 60, 100, SceneObject(pSceneObject):getObjectID(), 0)
+			CreatureObject(playerObject):addDotState(pSceneObject, BLEEDING, 450, HEALTH, 60, 100, SceneObject(pSceneObject):getObjectID(), 0)
 		end
 	end
 
@@ -215,7 +225,7 @@ function endor_wb:bossDead(pBoss)
 end
 
 function endor_wb:KillSpawn()
-		local pBoss = spawnMobile("lok", "kimogila_matriarch", -1, 5995.7, 64.2, 6143.4, 166, 19500000)
+		local pBoss = spawnMobile("endor", "frenzied_gorax", -1, -4334-8, 249.4, 7438.5, 169, 19500000)
 		createObserver(DAMAGERECEIVED, "endor_wb", "npcDamageObserver", pBoss)
 		createObserver(OBJECTDESTRUCTION, "endor_wb", "bossDead", pBoss)
 end
