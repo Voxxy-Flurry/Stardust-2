@@ -1758,9 +1758,9 @@ function DeathWatchBunkerScreenPlay:stopCraftingProcess(pCreature, pTerm, succes
 
 	if teleport == true then
 		if (number == 4) then
-			createEvent(5000, "DeathWatchBunkerScreenPlay", "removeFromBunker", pCreature, "")
+			--createEvent(5000, "DeathWatchBunkerScreenPlay", "removeFromBunker", pCreature, "")
 		else
-			createEvent(500, "DeathWatchBunkerScreenPlay", "teleportPlayer", pCreature, "")
+			--createEvent(500, "DeathWatchBunkerScreenPlay", "teleportPlayer", pCreature, "")
 		end
 	end
 end
