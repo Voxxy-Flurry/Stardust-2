@@ -10,8 +10,8 @@ bh_dark_adept = Creature:new {
 	damageMin = 945,
 	damageMax = 1600,
 	baseXp = 13178,
-	baseHAM = 50000,
-	baseHAMmax = 61000,
+	baseHAM = 65000,
+	baseHAMmax = 80000,
 	armor = 1,
 	resists = {80,80,80,80,80,80,80,80,-1},
 	meatType = "",
@@ -36,14 +36,13 @@ bh_dark_adept = Creature:new {
 				{group = "tailor_components", chance = 500000},
 				{group = "loot_kit_parts", chance = 500000},
 				{group = "color_crystals", chance = 500000},
-				{group = "death_watch_bh_armor_schematics", chance = 500000}, 
-				{group = "wearables_all", chance = 1000000},
-				{group = "weapons_all", chance = 1000000},
-				{group = "armor_all", chance = 1000000},
+				{group = "death_watch_bh_armor_schematics", chance = 2500000}, 
+				{group = "wearables_all", chance = 500000},
+				{group = "weapons_all", chance = 500000},
 				{group = "clothing_attachments", chance = 1000000},
 				{group = "armor_attachments", chance = 1000000}
 			},
-			lootChance = 5400000
+			lootChance = 8500000
 		},
 		{
 			groups = {
@@ -51,14 +50,13 @@ bh_dark_adept = Creature:new {
 				{group = "tailor_components", chance = 500000},
 				{group = "loot_kit_parts", chance = 500000},
 				{group = "color_crystals", chance = 500000},
-				{group = "death_watch_bh_armor_schematics", chance = 500000}, 
-				{group = "wearables_all", chance = 1000000},
-				{group = "weapons_all", chance = 1000000},
-				{group = "armor_all", chance = 1000000},
+				{group = "death_watch_bh_armor_schematics", chance = 2500000}, 
+				{group = "wearables_all", chance = 500000},
+				{group = "weapons_all", chance = 500000},
 				{group = "clothing_attachments", chance = 1000000},
 				{group = "armor_attachments", chance = 1000000}
 			},
-			lootChance = 5400000
+			lootChance = 6000000
 		},
 		{
 			groups = {
@@ -66,14 +64,13 @@ bh_dark_adept = Creature:new {
 				{group = "tailor_components", chance = 500000},
 				{group = "loot_kit_parts", chance = 500000},
 				{group = "color_crystals", chance = 500000},
-				{group = "death_watch_bh_armor_schematics", chance = 500000}, 				
-				{group = "wearables_all", chance = 1000000},
-				{group = "weapons_all", chance = 1000000},
-				{group = "armor_all", chance = 1000000},
+				{group = "death_watch_bh_armor_schematics", chance = 2500000}, 
+				{group = "wearables_all", chance = 500000},
+				{group = "weapons_all", chance = 500000},
 				{group = "clothing_attachments", chance = 1000000},
 				{group = "armor_attachments", chance = 1000000}
 			},
-			lootChance = 5400000
+			lootChance = 4000000
 		},
 	},
 
