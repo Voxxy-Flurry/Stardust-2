@@ -10,8 +10,8 @@ bh_force_crystal_hunter = Creature:new {
 	damageMin = 820,
 	damageMax = 1350,
 	baseXp = 10921,
-	baseHAM = 24000,
-	baseHAMmax = 30000,
+	baseHAM = 34000,
+	baseHAMmax = 45000,
 	armor = 1,
 	resists = {80,80,80,80,80,80,80,80,-1},
 	meatType = "",
@@ -32,49 +32,45 @@ bh_force_crystal_hunter = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 2500000},
+				{group = "junk", chance = 3000000},
 				{group = "tailor_components", chance = 500000},
 				{group = "loot_kit_parts", chance = 500000},
 				{group = "color_crystals", chance = 500000},
-				{group = "power_crystals", chance = 1000000},
+				{group = "death_watch_bh_armor_schematics", chance = 2000000}, 
 				{group = "wearables_all", chance = 1000000},
-				{group = "weapons_all", chance = 1000000},
-				{group = "armor_all", chance = 1000000},
+				{group = "weapons_all", chance = 500000},
 				{group = "clothing_attachments", chance = 1000000},
 				{group = "armor_attachments", chance = 1000000}
 			},
-			lootChance = 5300000
+			lootChance = 8500000
 		},
 		{
 			groups = {
-				{group = "junk", chance = 2500000},
+				{group = "junk", chance = 3000000},
 				{group = "tailor_components", chance = 500000},
 				{group = "loot_kit_parts", chance = 500000},
 				{group = "color_crystals", chance = 500000},
-				{group = "power_crystals", chance = 1000000},
+				{group = "death_watch_bh_armor_schematics", chance = 2000000}, 
 				{group = "wearables_all", chance = 1000000},
-				{group = "weapons_all", chance = 1000000},
-				{group = "armor_all", chance = 1000000},
+				{group = "weapons_all", chance = 500000},
 				{group = "clothing_attachments", chance = 1000000},
 				{group = "armor_attachments", chance = 1000000}
 			},
-			lootChance = 5300000
+			lootChance = 6000000
 		},
 		{
 			groups = {
-				{group = "junk", chance = 2500000},
+				{group = "junk", chance = 3000000},
 				{group = "tailor_components", chance = 500000},
 				{group = "loot_kit_parts", chance = 500000},
 				{group = "color_crystals", chance = 500000},
-				{group = "power_crystals", chance = 500000},
-				{group = "power_crystals", chance = 500000},
+				{group = "death_watch_bh_armor_schematics", chance = 2000000}, 
 				{group = "wearables_all", chance = 1000000},
-				{group = "weapons_all", chance = 1000000},
-				{group = "armor_all", chance = 1000000},
+				{group = "weapons_all", chance = 500000},
 				{group = "clothing_attachments", chance = 1000000},
 				{group = "armor_attachments", chance = 1000000}
 			},
-			lootChance = 5300000
+			lootChance = 4000000
 		},
 	},
 
