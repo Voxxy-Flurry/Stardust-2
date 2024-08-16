@@ -4,6 +4,7 @@ nk_necrosis = Creature:new {
 	socialGroup = "droids",
 	pvpFaction = "",
 	faction = "",
+	mobType = MOB_ANDROID,
 	level = 300,
 	chanceHit = 100,
 	damageMin = 1100,

@@ -3,6 +3,7 @@ sabercat = Creature:new {
 	customName = "a sabercat",
 	socialGroup = "gurreck",
 	faction = "",
+	mobType = MOB_CARNIVORE,
 	level = 50,
 	chanceHit = 0.5,
 	damageMin = 395,

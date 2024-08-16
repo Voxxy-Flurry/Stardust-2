@@ -3,6 +3,7 @@ sith_ghost = Creature:new {
 	customName = "a Tormented Sith Spirit",
 	socialGroup = "sith_shadow",
 	faction = "sith_shadow",
+	mobType = MOB_NPC,
 	level = 100,
 	chanceHit = 1,
 	damageMin = 445,

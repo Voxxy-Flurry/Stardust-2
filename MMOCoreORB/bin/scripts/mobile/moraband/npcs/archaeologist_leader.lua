@@ -3,6 +3,7 @@ archaeologist_leader = Creature:new {
 	customName = "Eleth Kor - an Imperial Archaeological Institute Leader",
 	socialGroup = "townsperson",
 	faction = "townsperson",
+	mobType = MOB_NPC,
 	level = 7,
 	chanceHit = 0.260000,
 	damageMin = 55,
