@@ -3,6 +3,7 @@ kaas_battle_droid = Creature:new {
 	customName = "a Malfunctioning Battle Droid",
 	socialGroup = "dark_jedi",
 	faction = "",
+	mobType = MOB_ANDROID,
 	level = 134,
 	chanceHit = 2.5,
 	damageMin = 295,

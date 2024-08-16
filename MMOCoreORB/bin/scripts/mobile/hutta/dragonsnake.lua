@@ -2,6 +2,7 @@ dragonsnake= Creature:new {
     customName = "a Dragonsnake",
 	socialGroup = "kun",
 	faction = "",
+	mobType = MOB_CARNIVORE,
 	level = 215,
 	chanceHit = 2.75,
 	damageMin = 800,

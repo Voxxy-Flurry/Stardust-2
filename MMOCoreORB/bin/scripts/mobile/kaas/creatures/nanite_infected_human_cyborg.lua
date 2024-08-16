@@ -4,6 +4,7 @@ nanite_infected_human_cyborg = Creature:new {
 	--randomNameTag = true,
 	socialGroup = "",
 	faction = "",
+	mobType = MOB_NPC,
 	level = 75,
 	chanceHit = 0.24,
 	damageMin = 140,

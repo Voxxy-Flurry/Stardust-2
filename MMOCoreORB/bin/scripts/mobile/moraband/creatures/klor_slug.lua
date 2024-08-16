@@ -2,6 +2,7 @@ klor_slug = Creature:new {
     customName = "a K'lor'slug",
 	socialGroup = "kun",
 	faction = "",
+	mobType = MOB_CARNIVORE,
 	level = 230,
 	chanceHit = 2.75,
 	damageMin = 790,
