@@ -3,6 +3,7 @@ ryder_azadi = Creature:new {
 	customName = "Governor Ryder Azadi",
 	socialGroup = "townsperson",
 	faction = "townsperson",
+	mobType = MOB_NPC,
 	level = 12,
 	chanceHit = 0.29,
 	damageMin = 130,

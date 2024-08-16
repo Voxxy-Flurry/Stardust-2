@@ -3,6 +3,7 @@ skalder_matriarch = Creature:new {
 	customName = "a Skalder Matriarch",
 	socialGroup = "snorbal",
 	faction = "",
+	mobType = MOB_CARNIVORE,
 	level = 45,
 	chanceHit = 0.47,
 	damageMin = 370,

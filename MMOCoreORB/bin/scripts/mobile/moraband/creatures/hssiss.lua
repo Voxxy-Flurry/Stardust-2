@@ -2,6 +2,7 @@ hssiss= Creature:new {
     customName = "a Hssiss",
 	socialGroup = "kun",
 	faction = "",
+	mobType = MOB_HERBIVORE,
 	level = 215,
 	chanceHit = 2.75,
 	damageMin = 800,

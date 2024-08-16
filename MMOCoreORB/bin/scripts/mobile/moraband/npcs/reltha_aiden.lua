@@ -3,6 +3,7 @@ reltha_aiden = Creature:new {
 	customName = "Reltha Aiden - an Imperial Archaeological Institute Specialist",
 	socialGroup = "townsperson",
 	faction = "townsperson",
+	mobType = MOB_NPC,
 	level = 34,
 	chanceHit = 0.410000,
 	damageMin = 320,

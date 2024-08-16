@@ -4,6 +4,7 @@ kaas_droideka = Creature:new {
 	socialGroup = "dark_jedi",
 	pvpFaction = "",
 	faction = "",
+	mobType = MOB_ANDROID,
 	level = 175,
 	chanceHit = 35.56,
 	damageMin = 526,

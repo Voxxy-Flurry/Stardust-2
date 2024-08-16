@@ -3,6 +3,7 @@ moraband_bunker_protocol_droid = Creature:new {
 	customName = "CT-212",
 	socialGroup = "",
 	faction = "",
+	mobType = MOB_DROID,
 	level = 100,
 	chanceHit = 1,
 	damageMin = 645,
