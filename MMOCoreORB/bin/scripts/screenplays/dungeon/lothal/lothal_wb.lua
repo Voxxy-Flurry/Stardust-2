@@ -39,7 +39,7 @@ function lothal_wb:npcDamageObserver(bossObject, playerObject, damage)
  			createEvent(5 * 1000, "lothal_wb", "cloud", playerObject, "")
 			createEvent(15 * 1000, "lothal_wb", "scratch", playerObject, "")
 			createEvent(20 * 1000, "lothal_wb", "scratch", playerObject, "")
-			CreatureObject(playerObject):sendSystemMessage("The Gorax slams his feet into the ground, sending scratchs and knocking you down!")			
+			CreatureObject(playerObject):sendSystemMessage("Blue roars menacingly in your direction!")			
       		CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
 	end
 
@@ -52,7 +52,7 @@ function lothal_wb:npcDamageObserver(bossObject, playerObject, damage)
  			createEvent(5 * 1000, "lothal_wb", "scratch", playerObject, "")
 			createEvent(15 * 1000, "lothal_wb", "scratch_mid", playerObject, "")
 			createEvent(20 * 1000, "lothal_wb", "scratch_mid", playerObject, "")       
-      			CreatureObject(playerObject):sendSystemMessage("The ground feels softer under barrage of the Gorax")
+      			CreatureObject(playerObject):sendSystemMessage("The giant creature spits an ominous green substance in your direction!")
       			CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
 	end
 
@@ -68,7 +68,7 @@ function lothal_wb:npcDamageObserver(bossObject, playerObject, damage)
 			createEvent(45 * 1000, "lothal_wb", "cloud", playerObject, "")
 			createEvent(65 * 1000, "lothal_wb", "cloud", playerObject, "")
 			
-      		CreatureObject(playerObject):sendSystemMessage("The ground gives way to a volcanic geyser! Move away now!")
+      		CreatureObject(playerObject):sendSystemMessage("A strange green cloud disperses from where the spit landed on the ground!")
       		CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
 	end
 
@@ -84,12 +84,12 @@ function lothal_wb:npcDamageObserver(bossObject, playerObject, damage)
 			createEvent(25 * 1000, "lothal_wb", "cloud", playerObject, "")
 			createEvent(45 * 1000, "lothal_wb", "cloud", playerObject, "")
 			createEvent(65 * 1000, "lothal_wb", "cloud", playerObject, "")			
-      		CreatureObject(playerObject):sendSystemMessage("Another breach beneath your feet!")
+      		CreatureObject(playerObject):sendSystemMessage("More poisonous spit! Keep moving!")
       		CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
 	end
 
 	if (((health <= (maxHealth * 0.1))) and readData("lothal_wb:spawnState") == 4) then
-				CreatureObject(playerObject):sendSystemMessage("The Gorax roars in defiance!")
+				CreatureObject(playerObject):sendSystemMessage("Blue screeches in frustration")
 				self:awardToken(bossObject)
       			writeData("lothal_wb:spawnState",5)  			
       			CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
