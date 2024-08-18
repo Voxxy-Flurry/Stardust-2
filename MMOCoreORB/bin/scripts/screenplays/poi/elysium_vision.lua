@@ -160,7 +160,8 @@ end
 function ElysiumVisionScreenPlay:spawnMobiles()
 
 
-  local pNpc = spawnMobile("elysium", "light_jedi_youngling",60,13.7,27.0,-173.0,90,590000068)
+  local 
+  pNpc = spawnMobile("elysium", "light_jedi_youngling",60,13.7,27.0,-173.0,90,590000068)
   self:setMoodString(pNpc, "neutral")
   pNpc = spawnMobile("elysium", "clone_trooper_501st",60,7.2,27.0,-172.7,90,590000067)
   self:setMoodString(pNpc, "neutral")
@@ -340,8 +341,9 @@ function ElysiumVisionScreenPlay:spawnMobiles()
   pNpc = spawnMobile("elysium", "clone_trooper_501st",60,25.6,19.0,-1.2,-73,590000047)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("elysium", "palpatine_elysium",60,-0.0, 27.6, 15.3,180,590000075)
-  self:setMoodString(pNpc, "npc_sitting_chair")
+  local pEmp = spawnMobile("elysium", "palpatine_elysium",60,-0.0, 27.6, 15.3,180,590000075)
+    CreatureObject(pEmp):setState(STATESITTINGONCHAIR)
+    self:setMoodString(pEmp, "npc_sitting_chair")
   
 
   
