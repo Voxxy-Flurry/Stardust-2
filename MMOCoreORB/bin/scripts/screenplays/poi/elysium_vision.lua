@@ -151,7 +151,9 @@ function ElysiumVisionScreenPlay:spawnSceneObjects()
   
   spawnSceneObject("elysium", "object/tangible/furniture/modern/flr_elysium.iff", 33.6, 27, -189.7, 590000069, math.rad(0) )
   
-  spawnSceneObject("elysium", "object/static/structure/elysium/invisible_wall.iff", 4000, 0, 4004, 180, math.rad(0) )
+  spawnSceneObject("elysium", "object/static/structure/elysium/invisible_wall.iff", 4000, 0, 4004, 0, math.rad(0) )
+  spawnSceneObject("elysium", "object/tangible/veteran_reward/frn_vet_emp_chair.iff", -0.0, 27.6, 15.3, 590000075, math.rad(0) )
+ 
  
 end
 
