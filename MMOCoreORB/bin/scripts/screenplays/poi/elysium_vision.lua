@@ -152,7 +152,7 @@ function ElysiumVisionScreenPlay:spawnSceneObjects()
   spawnSceneObject("elysium", "object/tangible/furniture/modern/flr_elysium.iff", 33.6, 27, -189.7, 590000069, math.rad(0) )
   
   spawnSceneObject("elysium", "object/static/structure/elysium/invisible_wall.iff", 4000, 0, 4004, 0, math.rad(0) )
-  spawnSceneObject("elysium", "object/tangible/veteran_reward/frn_vet_emp_chair.iff", -0.0, 27.6, 15.3, 590000075, math.rad(0) )
+  spawnSceneObject("elysium", "object/tangible/veteran_reward/frn_vet_emp_chair.iff", -0.0, 27.6, 15.3, 590000075, math.rad(180) )
  
  
 end
@@ -339,6 +339,10 @@ function ElysiumVisionScreenPlay:spawnMobiles()
   self:setMoodString(pNpc, "neutral")
   pNpc = spawnMobile("elysium", "clone_trooper_501st",60,25.6,19.0,-1.2,-73,590000047)
   self:setMoodString(pNpc, "neutral")
+  
+  pNpc = spawnMobile("elysium", "palpatine_elysium",60,-0.0, 27.6, 15.3,180,590000075)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
 
   
 end
