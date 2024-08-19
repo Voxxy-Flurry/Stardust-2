@@ -21,11 +21,12 @@ luke_skywalker_elysium = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE + AGGRESSIVE + ENEMY,
+	lightsaberColor = 2,
+	pvpBitmask = ATTACKABLE + AGGRESSIVE,
   creatureBitmask = PACK + KILLER,
   diet = HERBIVORE,
   optionsBitmask = AIENABLED,
-  lightsaberColor = 2,
+  
 
 	templates = {"object/mobile/dressed_luke_skywalker.iff"},
 	lootGroups = {},
@@ -39,7 +40,7 @@ luke_skywalker_elysium = Creature:new {
 
 	-- primaryAttacks and secondaryAttacks should be separate skill groups specific to the weapon type listed in primaryWeapon and secondaryWeapon
 	-- Use merge() to merge groups in creatureskills.lua together. If a weapon is set to "none", set the attacks variable to empty brackets
-	primaryAttacks = merge(lightsabermaster,forcepowermaster),
+	primaryAttacks = merge(lightsabermaster),
 	secondaryAttacks = { }
 }
 
