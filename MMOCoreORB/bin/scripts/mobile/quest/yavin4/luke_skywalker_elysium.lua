@@ -1,15 +1,15 @@
-darth_vader = Creature:new {
-	objectName = "@mob/creature_names:darth_vader",
-	socialGroup = "imperial",
-	faction = "imperial",
+luke_skywalker_elysium = Creature:new {
+	objectName = "@mob/creature_names:luke_skywalker",
+	socialGroup = "rebel",
+	faction = "rebel",
 	mobType = MOB_NPC,
-	level = 300,
-	chanceHit = 30,
-	damageMin = 1645,
-	damageMax = 3000,
-	baseXp = 28549,
+	level = 100,
+	chanceHit = 1,
+	damageMin = 645,
+	damageMax = 1000,
+	baseXp = 9429,
 	baseHAM = 385000,
-	baseHAMmax = 471000,
+  baseHAMmax = 471000,
 	armor = 1,
 	resists = {0,0,0,0,0,0,0,0,-1},
 	meatType = "",
@@ -25,21 +25,22 @@ darth_vader = Creature:new {
   creatureBitmask = PACK + KILLER,
   diet = HERBIVORE,
   optionsBitmask = AIENABLED,
-  	scale = 1.25,
+  lightsaberColor = 2,
 
-	templates = {"object/mobile/darth_vader.iff"},
+	templates = {"object/mobile/dressed_luke_skywalker.iff"},
 	lootGroups = {},
 
 	-- Primary and secondary weapon should be different types (rifle/carbine, carbine/pistol, rifle/unarmed, etc)
 	-- Unarmed should be put on secondary unless the mobile doesn't use weapons, in which case "unarmed" should be put primary and "none" as secondary
-	primaryWeapon = "darth_vader_weapons",
-	secondaryWeapon = "none",
-	conversationTemplate = "",
+	primaryWeapon = "luke_skywalker_weapons",
+	secondaryWeapon = "unarmed",
+	conversationTemplate = "theme_park_rebel_mission_giver_convotemplate",
+	outfit = "luke_outfit",
 
 	-- primaryAttacks and secondaryAttacks should be separate skill groups specific to the weapon type listed in primaryWeapon and secondaryWeapon
 	-- Use merge() to merge groups in creatureskills.lua together. If a weapon is set to "none", set the attacks variable to empty brackets
 	primaryAttacks = merge(lightsabermaster,forcepowermaster),
-	secondaryAttacks = {}
+	secondaryAttacks = { }
 }
 
-CreatureTemplates:addCreatureTemplate(darth_vader, "darth_vader")
+CreatureTemplates:addCreatureTemplate(luke_skywalker_elysium, "luke_skywalker_elysium")
