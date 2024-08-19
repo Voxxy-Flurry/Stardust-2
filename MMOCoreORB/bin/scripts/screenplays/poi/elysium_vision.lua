@@ -11,6 +11,7 @@ function ElysiumVisionScreenPlay:start()
     self:spawnMobiles()
     self:spawnSceneObjects()
     self:spawnActiveArea1()
+    self:spawnActiveArea2()
   end
 end
 
@@ -379,7 +380,7 @@ function ElysiumVisionScreenPlay:notifySpawnArea1(pActiveArea1, pMovingObject, p
 end
 
 function ElysiumVisionScreenPlay:spawnActiveArea2()
-  local pSpawnArea2 = spawnSceneObject("elysium", "object/active_area.iff", 4000, 26, 4000, 0, 590000074) --33.6, 27, -189.7, 590000069
+  local pSpawnArea2 = spawnSceneObject("elysium", "object/active_area.iff", 4000, 26.9, 4000, 0, 590000074) --33.6, 27, -189.7, 590000069
     
   if (pSpawnArea2 ~= nil) then
     local activeArea2 = LuaActiveArea(pSpawnArea2)
