@@ -346,6 +346,11 @@ function ElysiumVisionScreenPlay:spawnMobiles()
     CreatureObject(pEmp):setState(STATESITTINGONCHAIR)
     self:setMoodString(pEmp, "npc_sitting_chair")
   
+  pNpc = spawnMobile("elysium", "darth_vader",60,-0.9,26.9,9.9,157,590000075)
+  self:setMoodString(pNpc, "neutral")
+  
+  pNpc = spawnMobile("elysium", "luke_skywalker_elysium",60,0.7,26.9,6.6,-30,590000075)
+  self:setMoodString(pNpc, "neutral")
 
   
 end
