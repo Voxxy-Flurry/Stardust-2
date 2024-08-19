@@ -159,7 +159,7 @@ function ElysiumVisionScreenPlay:spawnSceneObjects()
   spawnSceneObject("elysium", "object/tangible/furniture/all/frn_all_command_console.iff", 2.2, 26.9, 9.6, 590000075, math.rad(-90) ) 
   spawnSceneObject("elysium", "object/tangible/furniture/all/frn_all_command_console.iff", -2.2, 26.9, 9.6, 590000075, math.rad(90) ) 
   spawnSceneObject("elysium", "object/tangible/furniture/all/frn_all_technical_console_s02.iff", -12.7, 26.9, -0.1, 590000075, math.rad(90) ) 
-  spawnSceneObject("elysium", "object/tangible/furniture/technical/guild_screen_imp_1.iff", 3.4, 29, 4.8, 590000075, math.rad(135) )
+  spawnSceneObject("elysium", "object/tangible/furniture/technical/guild_screen_imp_1.iff", 3.4, 29, 4.8, 590000075, math.rad(45) )
   
 end
 
