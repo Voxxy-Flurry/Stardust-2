@@ -378,3 +378,24 @@ function ElysiumVisionScreenPlay:notifySpawnArea1(pActiveArea1, pMovingObject, p
   return 0  
 end
 
+function ElysiumVisionScreenPlay:spawnActiveArea2()
+  local pSpawnArea2 = spawnSceneObject("elysium", "object/active_area.iff", 4000, 26, 4000, 0, 590000074) --33.6, 27, -189.7, 590000069
+    
+  if (pSpawnArea2 ~= nil) then
+    local activeArea2 = LuaActiveArea(pSpawnArea2)
+          activeArea2:setCellObjectID(590000074)
+          activeArea2:setRadius(512)
+          createObserver(ENTEREDAREA, "ElysiumVisionScreenPlay", "notifySpawnArea2", pSpawnArea2)          
+      end
+end
+
+function ElysiumVisionScreenPlay:notifySpawnArea2(pActiveArea2, pMovingObject, pPlayer)
+  
+  if (not SceneObject(pMovingObject):isPlayerCreature()) then
+    return 0
+  else  
+      CreatureObject(pMovingObject):playMusicMessage("sound/mus_ds2_duel.snd")       
+  end
+  return 0  
+end
+
