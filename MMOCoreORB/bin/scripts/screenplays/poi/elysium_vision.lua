@@ -155,7 +155,8 @@ function ElysiumVisionScreenPlay:spawnSceneObjects()
   spawnSceneObject("elysium", "object/tangible/veteran_reward/frn_vet_emp_chair.iff", -0.0, 27.6, 15.3, 590000075, math.rad(180) )
   spawnSceneObject("elysium", "object/tangible/furniture/modern/flr_elysium.iff", -0.0, 26.9, 0.1, 590000074, math.rad(0) )
   spawnSceneObject("elysium", "object/static/particle/pt_flocking_glowzees.iff", -0.0, 26.9, 0.1, 590000074, math.rad(0) ) 
- 
+  spawnSceneObject("elysium", "object/tangible/furniture/frn_all_command_console.iff", 2.2, 26.9, 9.6, 590000075, math.rad(-90) ) 
+  spawnSceneObject("elysium", "object/tangible/furniture/frn_all_command_console.iff", -2.2, 26.9, 9.6, 590000075, math.rad(90) ) 
 end
 
 function ElysiumVisionScreenPlay:spawnMobiles()
