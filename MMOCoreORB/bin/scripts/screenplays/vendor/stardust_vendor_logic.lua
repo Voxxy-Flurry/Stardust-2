@@ -46,6 +46,16 @@ StardustVendorLogic = ScreenPlay:new {
 			{name = "STAP Speeder", template = "object/tangible/deed/vehicle_deed/speeder_stap_deed.iff", cost = {5, 0, 0, 0, 0, 0}},
 			{name = "Imperial PSG Schematic", template = "object/tangible/loot/quest/shield_generator_personal_imperial_test_schematic.iff", cost = {10, 0, 0, 0, 0, 0}},
 			{name = "Metal Recycler Schematic", template = "object/tangible/loot/loot_schematic/metal_recycler_schematic.iff", cost = {10, 0, 0, 0, 0, 0}},
+			{name = "DP23 Rifle Schematic", template = "object/tangible/loot/loot_schematic/weapon_schematic/som_rifle_dp23_schematic.iff", cost = {10, 0, 0, 0, 0, 0}},
+			{name = "Renegade Pistol Schematic", template = "object/tangible/loot/loot_schematic/weapon_schematic/pistol_renegade_schematic.iff", cost = {10, 0, 0, 0, 0, 0}},
+			{name = "DC15 Rifle Schematic", template = "object/tangible/loot/loot_schematic/weapon_schematic/rifle_bounty_dc15_schematic.iff", cost = {10, 0, 0, 0, 0, 0}},
+			{name = "LD-1 Rifle Schematic", template = "object/tangible/loot/loot_schematic/weapon_schematic/rifle_ld1_schematic.iff", cost = {10, 0, 0, 0, 0, 0}},
+			{name = "Massassi Ink Rifle Schematic", template = "object/tangible/loot/loot_schematic/weapon_schematic/rifle_massassi_ink_schematic.iff", cost = {10, 0, 0, 0, 0, 0}},
+			{name = "Xandank Lance Schematic", template = "object/tangible/loot/loot_schematic/weapon_schematic/som_lance_xandank_schematic.iff", cost = {10, 0, 0, 0, 0, 0}},
+			{name = "Soulleecher Schematic (1H)", template = "object/tangible/loot/loot_schematic/weapon_schematic/sword_massassi_schematic.iff", cost = {10, 0, 0, 0, 0, 0}},
+			{name = "Bothan Carbine Schematic", template = "object/tangible/loot/loot_schematic/weapon_schematic/carbine_bothan_bola_schematic.iff", cost = {10, 0, 0, 0, 0, 0}},
+			{name = "Charric Carbine Schematic", template = "object/tangible/loot/loot_schematic/weapon_schematic/carbine_charric_schematic.iff", cost = {10, 0, 0, 0, 0, 0}},
+			{name = "Soulstinger Knuckler Schematic", template = "object/tangible/loot/loot_schematic/weapon_schematic/melee_ep3_loot_soulstinger_schematic.iff", cost = {10, 0, 0, 0, 0, 0}},
 		},
 }
 
