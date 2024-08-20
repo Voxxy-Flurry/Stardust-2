@@ -160,7 +160,7 @@ function ElysiumVisionScreenPlay:spawnSceneObjects()
   spawnSceneObject("elysium", "object/tangible/furniture/all/frn_all_command_console.iff", -2.2, 26.9, 9.6, 590000075, math.rad(90) ) 
   spawnSceneObject("elysium", "object/tangible/furniture/all/frn_all_technical_console_s02.iff", -12.7, 26.9, -0.1, 590000075, math.rad(90) ) 
   spawnSceneObject("elysium", "object/tangible/furniture/technical/guild_screen_imp_1.iff", 3.4, 29, 4.8, 590000075, math.rad(45) )
-  
+  spawnSceneObject("elysium", "object/tangible/furniture/all/frn_all_technical_console_s02.iff", 12.7, 26.9, -0.1, 590000075, math.rad(90) ) 
 end
 
 function ElysiumVisionScreenPlay:spawnMobiles()
@@ -351,11 +351,11 @@ function ElysiumVisionScreenPlay:spawnMobiles()
     CreatureObject(pEmp):setState(STATESITTINGONCHAIR)
     self:setMoodString(pEmp, "npc_sitting_chair")
   
-  pNpc = spawnMobile("elysium", "darth_vader",60,-0.9,26.9,9.9,157,590000075)
-  self:setMoodString(pNpc, "neutral")
+  local pVader = spawnMobile("elysium", "darth_vader",60,-0.9,26.9,9.9,157,590000075)
+  self:setMoodString(pVader, "neutral")
   
-  pNpc = spawnMobile("elysium", "luke_skywalker_elysium",60,0.7,26.9,6.6,-30,590000075)
-  self:setMoodString(pNpc, "neutral")
+  local pLuke = spawnMobile("elysium", "luke_skywalker_elysium",60,0.7,26.9,6.6,-30,590000075)
+  self:setMoodString(pLuke, "neutral")
 
   
 end
