@@ -14,7 +14,7 @@ end
 function TatooineStaticSpawnsNorthScreenPlay:spawnMobiles()
 
 	--Sicktopia Spynet
-	spawnMobile("tatooine", "informant_npc_lvl_3", 1, -368, 0, 3859, 0, 0)
+	spawnMobile("tatooine", "informant_npc_lvl_3", 1, -407, 0, 3988, 0, 0)
 
 	--Ruins + Bounty Hunter Camp (7045,7042)
 	local pNpc = spawnMobile("tatooine", "bounty_hunter_thug", 360, 7039.0, 72.2, 7051.5, -125, 0)
