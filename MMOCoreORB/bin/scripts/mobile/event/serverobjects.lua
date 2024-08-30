@@ -9,3 +9,13 @@ includeFile("event/life_day/tebeurra.lua")
 includeFile("event/city_control_landing/darth_vader_city_control.lua")
 includeFile("event/city_control_landing/leia_organa_city_control.lua")
 includeFile("event/city_control_landing/luke_skywalker_city_control.lua")
+
+--Admin Events
+includeFile("event/admin_event/event_boss_one.lua")
+includeFile("event/admin_event/event_boss_two.lua")
+includeFile("event/admin_event/event_boss_three.lua")
+includeFile("event/admin_event/event_black_sun_guard.lua")
+includeFile("event/admin_event/event_dark_jedi_knight.lua")
+includeFile("event/admin_event/event_dark_jedi_master.lua")
+includeFile("event/admin_event/event_death_watch_ghost.lua")
+includeFile("event/admin_event/event_nightsister_elder.lua")
