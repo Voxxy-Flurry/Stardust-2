@@ -5,15 +5,15 @@ event_dark_jedi_master = Creature:new {
 	mobType = MOB_NPC,
 	socialGroup = "sith_shadow",
 	faction = "sith_shadow",
-	level = 350,
-	chanceHit = 27.25,
-	damageMin = 2800,
-	damageMax = 4310,
-	baseXp = 27849,
-	baseHAM = 921000,
-	baseHAMmax = 992000,
+	level = 275,
+	chanceHit = 23.5,
+	damageMin = 1645,
+	damageMax = 3500,
+	baseXp = 25266,
+	baseHAM = 491000,
+	baseHAMmax = 950000,
 	armor = 1,
-	resists = {90,90,90,90,90,90,90,90,40},
+	resists = {90,90,90,90,90,90,90,90,45},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -107,13 +107,13 @@ event_dark_jedi_master = Creature:new {
 				{group = "dark_jedi_common", chance = 800000}
 			},
 				lootChance = 10000000,
-		},
+		}
+		
 	},
-	
 
 	-- Primary and secondary weapon should be different types (rifle/carbine, carbine/pistol, rifle/unarmed, etc)
 	-- Unarmed should be put on secondary unless the mobile doesn't use weapons, in which case "unarmed" should be put primary and "none" as secondary
-	primaryWeapon = "dark_jedi_weapons_gen4",
+	primaryWeapon = "dark_jedi_weapons_gen3",
 	secondaryWeapon = "unarmed",
 	conversationTemplate = "",
 
