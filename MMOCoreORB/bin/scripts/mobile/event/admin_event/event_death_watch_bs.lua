@@ -29,7 +29,7 @@ event_death_watch_bs = Creature:new {
 	diet = HERBIVORE,
 	scale = 1.15,
 
-	templates = {"object/mobile/dressed_death_watch_grey.iff"},
+	templates = {"object/mobile/dressed_black_sun_guard.iff"},
 	lootGroups = {
 		{
 			groups = {
