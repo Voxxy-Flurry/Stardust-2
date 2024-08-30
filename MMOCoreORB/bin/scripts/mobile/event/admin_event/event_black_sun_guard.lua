@@ -1,11 +1,9 @@
 event_black_sun_guard = Creature:new {
 	customName = "A Black Sun Guard (Event)",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
 	mobType = MOB_NPC,
 	socialGroup = "death_watch",
 	faction = "",
-	level = 96,
+	level = 350,
 	chanceHit = 0.95,
 	damageMin = 1620,
 	damageMax = 1950,
