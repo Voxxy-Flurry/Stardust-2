@@ -1,5 +1,5 @@
-death_watch_ghost = Creature:new {
-	objectName = "@mob/creature_names:mand_bunker_dthwatch_grey",
+event_death_watch_ghost = Creature:new {
+	customName = "A Death Watch Ghost (Event)",
 	randomNameType = NAME_GENERIC,
 	randomNameTag = true,
 	mobType = MOB_NPC,
@@ -10,8 +10,8 @@ death_watch_ghost = Creature:new {
 	damageMin = 895,
 	damageMax = 1500,
 	baseXp = 14314,
-	baseHAM = 210000,
-	baseHAMmax = 250000,
+	baseHAM = 310000,
+	baseHAMmax = 350000,
 	armor = 1,
 	resists = {65,65,70,60,35,35,100,50,-1},
 	meatType = "",
@@ -75,4 +75,4 @@ death_watch_ghost = Creature:new {
 	secondaryAttacks = { }
 }
 
-CreatureTemplates:addCreatureTemplate(death_watch_ghost, "death_watch_ghost")
+CreatureTemplates:addCreatureTemplate(event_death_watch_ghost, "event_death_watch_ghost")
