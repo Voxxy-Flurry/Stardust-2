@@ -1,7 +1,5 @@
 event_dark_jedi_knight = Creature:new {
 	customName = "A Dark Jedi Knight (Event)",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
 	mobType = MOB_NPC,
 	socialGroup = "sith_shadow",
 	faction = "sith_shadow",

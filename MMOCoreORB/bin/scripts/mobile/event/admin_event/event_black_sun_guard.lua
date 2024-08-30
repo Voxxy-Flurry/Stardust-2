@@ -1,17 +1,15 @@
 event_black_sun_guard = Creature:new {
-	objectName = "@mob/creature_names:mand_bunker_blksun_guard",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
+	customName = "A Black Sun Guard (Event)",
 	mobType = MOB_NPC,
 	socialGroup = "death_watch",
 	faction = "",
-	level = 300,
-	chanceHit = 10,
-	damageMin = 1220,
-	damageMax = 1700,
+	level = 350,
+	chanceHit = 0.95,
+	damageMin = 1620,
+	damageMax = 1950,
 	baseXp = 9057,
-	baseHAM = 120000,
-	baseHAMmax = 125000,
+	baseHAM = 220000,
+	baseHAMmax = 225000,
 	armor = 1,
 	resists = {40,40,60,35,55,70,35,40,-1},
 	meatType = "",
@@ -69,8 +67,7 @@ event_black_sun_guard = Creature:new {
 				{group = "wearables_uncommon", chance = 500000}
 			}
 				lootChance = 10000000,
-		},
-		
+		}
 	},
 
 	-- Primary and secondary weapon should be different types (rifle/carbine, carbine/pistol, rifle/unarmed, etc)
