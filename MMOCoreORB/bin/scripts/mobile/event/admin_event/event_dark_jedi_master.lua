@@ -1,4 +1,4 @@
-event_dark_jedi_master = Creature:new {
+event_dark_jedi_mas = Creature:new {
 	customName = "A Dark Jedi Master (Event)",
 	mobType = MOB_NPC,
 	socialGroup = "sith_shadow",
@@ -41,19 +41,6 @@ event_dark_jedi_master = Creature:new {
 			},
 				lootChance = 10000000,
 		},
-		{{
-			groups = {
-				{group = "holocron_dark", chance = 300000},
-				{group = "holocron_light", chance = 300000},
-				{group = "power_crystals", chance = 1200000},
-				{group = "ranged_weapons", chance = 1300000},
-				{group = "melee_weapons", chance = 1300000},
-				{group = "armor_attachments", chance = 2400000},
-				{group = "clothing_attachments", chance = 2400000},
-				{group = "dark_jedi_common", chance = 800000}
-			},
-				lootChance = 10000000,
-		},
 		{
 			groups = {
 				{group = "holocron_dark", chance = 300000},
@@ -105,13 +92,26 @@ event_dark_jedi_master = Creature:new {
 				{group = "dark_jedi_common", chance = 800000}
 			},
 				lootChance = 10000000,
-		}
+		},
+		{
+			groups = {
+				{group = "holocron_dark", chance = 300000},
+				{group = "holocron_light", chance = 300000},
+				{group = "power_crystals", chance = 1200000},
+				{group = "ranged_weapons", chance = 1300000},
+				{group = "melee_weapons", chance = 1300000},
+				{group = "armor_attachments", chance = 2400000},
+				{group = "clothing_attachments", chance = 2400000},
+				{group = "dark_jedi_common", chance = 800000}
+			},
+				lootChance = 10000000,
+		},
 		
 	},
 
 	-- Primary and secondary weapon should be different types (rifle/carbine, carbine/pistol, rifle/unarmed, etc)
 	-- Unarmed should be put on secondary unless the mobile doesn't use weapons, in which case "unarmed" should be put primary and "none" as secondary
-	primaryWeapon = "dark_jedi_weapons_gen4",
+	primaryWeapon = "dark_jedi_weapons_gen3",
 	secondaryWeapon = "unarmed",
 	conversationTemplate = "",
 
@@ -121,4 +121,4 @@ event_dark_jedi_master = Creature:new {
 	secondaryAttacks = forcepowermaster
 }
 
-CreatureTemplates:addCreatureTemplate(event_dark_jedi_master, "event_dark_jedi_master")
+CreatureTemplates:addCreatureTemplate(event_dark_jedi_mas, "event_dark_jedi_mas")
