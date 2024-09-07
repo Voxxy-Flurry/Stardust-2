@@ -1,4 +1,4 @@
-event_animal_one = Creature:new {
+event_animal = Creature:new {
 	customName = "A Huurton Lunatik (Event)",
 	mobType = MOB_CARNIVORE,
 	faction = "kun",
@@ -65,4 +65,4 @@ event_animal_one = Creature:new {
 	secondaryAttacks = { }
 }
 
-CreatureTemplates:addCreatureTemplate(event_animal_one, "event_animal_one")
+CreatureTemplates:addCreatureTemplate(event_animal, "event_animal")
