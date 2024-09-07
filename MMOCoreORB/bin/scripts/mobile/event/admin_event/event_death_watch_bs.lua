@@ -1,19 +1,17 @@
 event_death_watch_bs = Creature:new {
-	customName = "A Black Sun Enforcer (Event)",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
+	customName = "A Black Sun Guard (Event)",
 	mobType = MOB_NPC,
-	socialGroup = "death_watch",
-	faction = "",
+	socialGroup = "kun",
+	faction = "kun",
 	level = 350,
-	chanceHit = 8.5,
-	damageMin = 895,
-	damageMax = 1500,
-	baseXp = 14314,
-	baseHAM = 310000,
-	baseHAMmax = 350000,
+	chanceHit = 0.95,
+	damageMin = 1620,
+	damageMax = 1950,
+	baseXp = 9057,
+	baseHAM = 220000,
+	baseHAMmax = 225000,
 	armor = 1,
-	resists = {65,65,70,60,35,35,100,50,-1},
+	resists = {40,40,60,35,55,70,35,40,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -33,46 +31,55 @@ event_death_watch_bs = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-		{group = "death_watch_bunker_commoners",   chance = 6300000},
-        {group = "death_watch_bunker_lieutenants", chance = 3400000},
-        {group = "death_watch_bunker_ingredient_protective",  chance = 100000},
-        {group = "dwb_weapons",  chance = 100000},
-        {group = "death_watch_bunker_ingredient_binary",  chance = 100000}
-			},
-			lootChance = 10000000
+				{group = "junk", chance = 6500000},
+				{group = "pistols", chance = 750000},
+				{group = "rifles", chance = 750000},
+				{group = "carbines", chance = 750000},
+				{group = "bounty_hunter_armor", chance = 200000},
+				{group = "jetpack_base", chance = 50000},
+				{group = "wearables_common", chance = 500000},
+				{group = "wearables_uncommon", chance = 500000}
+			}
+				lootChance = 10000000,
 		},
 		{
 			groups = {
-		{group = "death_watch_bunker_commoners",   chance = 6300000},
-        {group = "death_watch_bunker_lieutenants", chance = 3400000},
-        {group = "death_watch_bunker_ingredient_protective",  chance = 100000},
-        {group = "dwb_weapons",  chance = 100000},
-        {group = "death_watch_bunker_ingredient_binary",  chance = 100000}
-			},
-			lootChance = 10000000
+				{group = "junk", chance = 6500000},
+				{group = "pistols", chance = 750000},
+				{group = "rifles", chance = 750000},
+				{group = "carbines", chance = 750000},
+				{group = "bounty_hunter_armor", chance = 200000},
+				{group = "jetpack_base", chance = 50000},
+				{group = "wearables_common", chance = 500000},
+				{group = "wearables_uncommon", chance = 500000}
+			}
+				lootChance = 10000000,
 		},
 		{
 			groups = {
-		{group = "death_watch_bunker_commoners",   chance = 6300000},
-        {group = "death_watch_bunker_lieutenants", chance = 3400000},
-        {group = "death_watch_bunker_ingredient_protective",  chance = 100000},
-        {group = "dwb_weapons",  chance = 100000},
-        {group = "death_watch_bunker_ingredient_binary",  chance = 100000}
-			},
-			lootChance = 10000000
-		},
+				{group = "junk", chance = 6500000},
+				{group = "pistols", chance = 750000},
+				{group = "rifles", chance = 750000},
+				{group = "carbines", chance = 750000},
+				{group = "bounty_hunter_armor", chance = 200000},
+				{group = "jetpack_base", chance = 50000},
+				{group = "wearables_common", chance = 500000},
+				{group = "wearables_uncommon", chance = 500000}
+			}
+				lootChance = 10000000,
+		}
 	},
 
 	-- Primary and secondary weapon should be different types (rifle/carbine, carbine/pistol, rifle/unarmed, etc)
 	-- Unarmed should be put on secondary unless the mobile doesn't use weapons, in which case "unarmed" should be put primary and "none" as secondary
-	primaryWeapon = "pirate_weapons_heavy",
-	secondaryWeapon = "unarmed",
+	primaryWeapon = "deathwatch_ranged",
+	secondaryWeapon = "pirate_unarmed",
 	conversationTemplate = "",
 	
 	-- primaryAttacks and secondaryAttacks should be separate skill groups specific to the weapon type listed in primaryWeapon and secondaryWeapon
 	-- Use merge() to merge groups in creatureskills.lua together. If a weapon is set to "none", set the attacks variable to empty brackets
-	primaryAttacks = merge(bountyhuntermaster,marksmanmaster,brawlermaster,pikemanmaster,fencermaster,swordsmanmaster),
-	secondaryAttacks = { }
+	primaryAttacks = merge(bountyhuntermaster,marksmanmaster,carbineermaster),
+	secondaryAttacks = brawlermaster,
 }
 
 CreatureTemplates:addCreatureTemplate(event_death_watch_bs, "event_death_watch_bs")

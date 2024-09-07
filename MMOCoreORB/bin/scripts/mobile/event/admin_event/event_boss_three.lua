@@ -1,6 +1,6 @@
 event_boss_three = Creature:new {
-	customName = "Voxxy [Stardust-Admin]",
-	socialGroup = "mercenary",
+	customName = "Insane Al-a-din (Event)",
+	socialGroup = "kun",
 	faction = "",
 	level = 300,
 	chanceHit = 4.75,
@@ -24,9 +24,9 @@ event_boss_three = Creature:new {
 	creatureBitmask = PACK + KILLER + STALKER,
 	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,
-	scale = 3,	
+	scale = 1.5,	
 
-	templates = {"object/mobile/dressed_emperors_hand_human_female_01.iff"},
+	templates = {"object/mobile/ep3/palpatine_hologram.iff"},
 	lootGroups = {
 		{
 			groups = {

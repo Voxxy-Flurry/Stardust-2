@@ -1,9 +1,9 @@
 event_dark_jedi_knight = Creature:new {
 	customName = "A Dark Jedi Knight (Event)",
 	mobType = MOB_NPC,
-	socialGroup = "sith_shadow",
-	faction = "sith_shadow",
-	level = 275,
+	socialGroup = "kun",
+	faction = "kun",
+	level = 300,
 	chanceHit = 23.5,
 	damageMin = 1645,
 	damageMax = 3500,
