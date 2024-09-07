@@ -1,13 +1,13 @@
 event_boss_two = Creature:new {
-	customName = "Stoner's Ladyfriend (Event)",
-	socialGroup = "mercenary",
+	customName = "Ohwi's Protege (Event)",
+	socialGroup = "kun",
 	faction = "",
 	level = 300,
 	chanceHit = 4.75,
 	damageMin = 1045,
 	damageMax = 2500,
 	baseXp = 25167,
-	baseHAM = 961000,
+	baseHAM = 1361000,
 	baseHAMmax = 2020000,
 	armor = 2,
 	resists = {65,70,55,70,60,55,70,55,75},
@@ -24,9 +24,9 @@ event_boss_two = Creature:new {
 	creatureBitmask = PACK + KILLER + STALKER,
 	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,
-	scale = 2,
+	scale = 1.4,
 
-	templates = {"object/mobile/greeata.iff"},
+	templates = {"object/mobile/boba_fett_eow.iff"},
 		lootGroups = {
 		{
 			groups = {
