@@ -3,6 +3,7 @@ loth_cat = Creature:new {
 	customName = "a loth cat",
 	socialGroup = "jax",
 	faction = "",
+	mobType = MOB_HERBIVORE,
 	level = 16,
 	chanceHit = 0.31,
 	damageMin = 170,

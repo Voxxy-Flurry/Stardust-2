@@ -11,6 +11,7 @@ function ElysiumVisionScreenPlay:start()
     self:spawnMobiles()
     self:spawnSceneObjects()
     self:spawnActiveArea1()
+    self:spawnActiveArea2()
   end
 end
 
@@ -150,13 +151,23 @@ function ElysiumVisionScreenPlay:spawnSceneObjects()
   spawnSceneObject("elysium", "object/static/structure/elysium/invisible_wall.iff", -15.2, 27, -120.8, 590000053, math.rad(90) )
   
   spawnSceneObject("elysium", "object/tangible/furniture/modern/flr_elysium.iff", 33.6, 27, -189.7, 590000069, math.rad(0) )
- 
+  
+  spawnSceneObject("elysium", "object/static/structure/elysium/invisible_wall.iff", 4000, 0, 4004, 0, math.rad(0) )
+  spawnSceneObject("elysium", "object/tangible/veteran_reward/frn_vet_emp_chair.iff", -0.0, 27.6, 15.3, 590000075, math.rad(180) )
+  spawnSceneObject("elysium", "object/tangible/furniture/modern/flr_elysium.iff", -0.0, 26.9, 0.1, 590000074, math.rad(0) )
+  spawnSceneObject("elysium", "object/static/particle/pt_flocking_glowzees.iff", -0.0, 26.9, 0.1, 590000074, math.rad(0) ) 
+  spawnSceneObject("elysium", "object/tangible/furniture/all/frn_all_command_console.iff", 2.2, 26.9, 9.6, 590000075, math.rad(-90) ) 
+  spawnSceneObject("elysium", "object/tangible/furniture/all/frn_all_command_console.iff", -2.2, 26.9, 9.6, 590000075, math.rad(90) ) 
+  spawnSceneObject("elysium", "object/tangible/furniture/all/frn_all_technical_console_s02.iff", -12.7, 26.9, -0.1, 590000075, math.rad(90) ) 
+  spawnSceneObject("elysium", "object/tangible/furniture/technical/guild_screen_imp_1.iff", 3.4, 29, 4.8, 590000075, math.rad(45) )
+  spawnSceneObject("elysium", "object/tangible/furniture/all/frn_all_technical_console_s02.iff", 12.7, 26.9, -0.1, 590000075, math.rad(90) ) 
 end
 
 function ElysiumVisionScreenPlay:spawnMobiles()
 
 
-  local pNpc = spawnMobile("elysium", "light_jedi_youngling",60,13.7,27.0,-173.0,90,590000068)
+  local 
+  pNpc = spawnMobile("elysium", "light_jedi_youngling",60,13.7,27.0,-173.0,90,590000068)
   self:setMoodString(pNpc, "neutral")
   pNpc = spawnMobile("elysium", "clone_trooper_501st",60,7.2,27.0,-172.7,90,590000067)
   self:setMoodString(pNpc, "neutral")
@@ -237,6 +248,20 @@ function ElysiumVisionScreenPlay:spawnMobiles()
   pNpc = spawnMobile("elysium", "clone_trooper_501st",60,34.0,33.0,-93.9,85,590000055)
   self:setMoodString(pNpc, "neutral")
   
+  pNpc = spawnMobile("elysium", "light_jedi_youngling",60,-46.3,33.0,-93.7,80,590000061)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "light_jedi_youngling",60,-45.3,33.0,-99,-150,590000061)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "light_jedi_youngling",60,-46.2,33.0,-87.4,-44,590000061)
+  self:setMoodString(pNpc, "neutral")
+  
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,-30.9,33.0,-94,81,590000061)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,-31.5,33.0,-92,96,590000061)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,-31.0,33.0,-95.2,85,590000061)
+  self:setMoodString(pNpc, "neutral")
+  
   pNpc = spawnMobile("elysium", "light_jedi_padawan_b",60,1.6,27.0,-68.8,-178,590000052)
   self:setMoodString(pNpc, "neutral")
   pNpc = spawnMobile("elysium", "light_jedi_padawan_g",60,-1.6,27.0,-70.0,168,590000052)
@@ -296,8 +321,41 @@ function ElysiumVisionScreenPlay:spawnMobiles()
   pNpc = spawnMobile("elysium", "anakin_skywalker",60,27.9,23.0,-42.1,0,590000049)
   self:setMoodString(pNpc, "neutral")
   
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,8.1,19.0,1.7,-3,590000047)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,-7.3,19.0,1.7,-3,590000047)
+  self:setMoodString(pNpc, "neutral")
   
+  pNpc = spawnMobile("elysium", "light_jedi_padawan_g",60,-44.7,19.0,29.8,3,590000047)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,-41.0,19.0,19.5,-12,590000047)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,-43.2,19.0,19.2,-14,590000047)
+  self:setMoodString(pNpc, "neutral")
   
+  pNpc = spawnMobile("elysium", "light_jedi_padawan_b",60,-31.2,19.0,10.7,-139,590000047)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,-37.1,19.0,8.0,65,590000047)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,-33.5,19.0,4.2,28,590000047)
+  self:setMoodString(pNpc, "neutral")
+  
+  pNpc = spawnMobile("elysium", "light_jedi_padawan_g",60,16.6,19.0,2.6,-139,590000047)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,19.3,19.0,-3.4,-28,590000047)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("elysium", "clone_trooper_501st",60,25.6,19.0,-1.2,-73,590000047)
+  self:setMoodString(pNpc, "neutral")
+  
+  local pEmp = spawnMobile("elysium", "palpatine_elysium",60,-0.0, 27.6, 15.3,180,590000075)
+    CreatureObject(pEmp):setState(STATESITTINGONCHAIR)
+    self:setMoodString(pEmp, "npc_sitting_chair")
+  
+  local pVader = spawnMobile("elysium", "darth_vader",60,-0.9,26.9,9.9,157,590000075)
+  self:setMoodString(pVader, "neutral")
+  
+  local pLuke = spawnMobile("elysium", "luke_skywalker_elysium",60,0.7,26.9,6.6,-30,590000075)
+  self:setMoodString(pLuke, "neutral")
 
   
 end
@@ -320,6 +378,27 @@ function ElysiumVisionScreenPlay:notifySpawnArea1(pActiveArea1, pMovingObject, p
     return 0
   else  
       CreatureObject(pMovingObject):playMusicMessage("sound/mus_order_66.snd")       
+  end
+  return 0  
+end
+
+function ElysiumVisionScreenPlay:spawnActiveArea2()
+  local pSpawnArea2 = spawnSceneObject("elysium", "object/active_area.iff", 4000, 26.9, 4000, 0, 590000074) --33.6, 27, -189.7, 590000069
+    
+  if (pSpawnArea2 ~= nil) then
+    local activeArea2 = LuaActiveArea(pSpawnArea2)
+          activeArea2:setCellObjectID(590000074)
+          activeArea2:setRadius(512)
+          createObserver(ENTEREDAREA, "ElysiumVisionScreenPlay", "notifySpawnArea2", pSpawnArea2)          
+      end
+end
+
+function ElysiumVisionScreenPlay:notifySpawnArea2(pActiveArea2, pMovingObject, pPlayer)
+  
+  if (not SceneObject(pMovingObject):isPlayerCreature()) then
+    return 0
+  else  
+      CreatureObject(pMovingObject):playMusicMessage("sound/mus_ds2_duel.snd")       
   end
   return 0  
 end

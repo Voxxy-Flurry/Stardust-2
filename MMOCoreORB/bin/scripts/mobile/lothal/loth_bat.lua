@@ -3,6 +3,7 @@ loth_bat = Creature:new {
 	socialGroup = "gacklebat",
 	customName = "a loth bat",
 	faction = "",
+	mobType = MOB_CARNIVORE,
 	level = 10,
 	chanceHit = 0.28,
 	damageMin = 120,

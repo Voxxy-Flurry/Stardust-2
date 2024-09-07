@@ -146,6 +146,7 @@ TatooineMosEnthaScreenPlay = CityScreenPlay:new {
 	},
 
 	mobiles = {
+		{"gadget_specialist", 60, 1209, 7, 2923, -3, 0, ""},
 		--eastern Tavern
 		{"scientist",60,-4.9,1.0,9.0,-12,1153626, "neutral"},
 		{"scientist",60,1.7,1,5.3,90,1153626, ""},

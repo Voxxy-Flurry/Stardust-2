@@ -12,7 +12,9 @@ end
 
 
 function dant_discipleScreenplay:spawnMobiles()
-		local pBoss = spawnMobile("dantooine", "dant_disciple",-1,-91.6,-100.4,-93.6,-178,529333)
+		local pBoss = spawnMobile("dantooine", "dant_disciple",-1,4194.7,9,5201,25,15098000)
+		spawnMobile("dantooine", "janta_scion",900,4198,9,5198,24,15098000)
+		spawnMobile("dantooine", "janta_scion",900,4189.8,9,5202.1,24,15098000)
 		local creature = CreatureObject(pBoss)
 		createObserver(DAMAGERECEIVED, "dant_discipleScreenplay", "npcDamageObserver", pBoss)    
 		createObserver(OBJECTDESTRUCTION, "dant_discipleScreenplay", "bossDead", pBoss)
@@ -87,6 +89,7 @@ function dant_discipleScreenplay:npcDamageObserver(bossObject, playerObject, dam
 
 	if (((health <= (maxHealth * 0.1))) and readData("dant_discipleScreenplay:spawnState") == 5) then
 				spatialChat(bossObject, "Your life force .. is mine!")
+				self:awardToken(bossObject)
       			writeData("dant_discipleScreenplay:spawnState",6)
 				createEvent(0 * 1000, "dant_discipleScreenplay", "finisher", playerObject, "")  		
       			CreatureObject(bossObject):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
@@ -173,7 +176,36 @@ function dant_discipleScreenplay:spawnSupport(bossObject, playerObject)
 	local pGuard4 = spawnMobile("dantooine", "janta_scion", -1, bossX, bossZ, bossY, 173, cell) 
 		CreatureObject(pGuard4):engageCombat(playerObject)
 
-end  
+end
+
+function dant_discipleScreenplay:awardToken(bossObject)
+    if bossObject == nil then
+        return
+    end
+
+    local playerTable = SceneObject(bossObject):getPlayersInRange(100)
+    if playerTable == nil then
+        return
+    end
+
+    if #playerTable > 0 then
+        for i = 1, #playerTable do
+            local currentPlayer = playerTable[i]
+            if currentPlayer ~= nil then
+                local pInventory = SceneObject(currentPlayer):getSlottedObject("inventory")
+                if pInventory ~= nil then
+                    if not SceneObject(pInventory):isContainerFullRecursive() then
+                        giveItem(pInventory, "object/tangible/item/stardust_pvp_token_generic.iff", -1)
+                    else
+                        CreatureObject(currentPlayer):sendSystemMessage("You did not receive a boss token because your inventory is full.")
+                    end
+                else
+                    CreatureObject(currentPlayer):sendSystemMessage("You did not receive a boss token because your inventory is full.")
+                end
+            end
+        end
+    end
+end
 
 function dant_discipleScreenplay:bossDead(pBoss)
 	local creature = CreatureObject(pBoss)

@@ -3,6 +3,7 @@ loth_rat = Creature:new {
 	customName = "a loth rat",
 	socialGroup = "rat",
 	faction = "",
+	mobType = MOB_CARNIVORE,
 	level = 10,
 	chanceHit = 0.28,
 	damageMin = 90,

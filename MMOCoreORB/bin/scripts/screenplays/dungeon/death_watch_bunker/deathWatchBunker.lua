@@ -754,12 +754,12 @@ function DeathWatchBunkerScreenPlay:removeFromBunker(pCreature)
 			local pMember = CreatureObject(pCreature):getGroupMember(i)
 			if pMember ~= nil then
 				if CreatureObject(pMember):getParentID() > 5996313 and CreatureObject(pMember):getParentID() < 5996380 then
-					createEvent(500, "DeathWatchBunkerScreenPlay", "teleportPlayer", pMember, "")
+					--createEvent(500, "DeathWatchBunkerScreenPlay", "teleportPlayer", pMember, "")
 				end
 			end
 		end
 	else
-		createEvent(500, "DeathWatchBunkerScreenPlay", "teleportPlayer", pCreature, "")
+		--createEvent(500, "DeathWatchBunkerScreenPlay", "teleportPlayer", pCreature, "")
 	end
 end
 
@@ -1758,9 +1758,9 @@ function DeathWatchBunkerScreenPlay:stopCraftingProcess(pCreature, pTerm, succes
 
 	if teleport == true then
 		if (number == 4) then
-			createEvent(5000, "DeathWatchBunkerScreenPlay", "removeFromBunker", pCreature, "")
+			--createEvent(5000, "DeathWatchBunkerScreenPlay", "removeFromBunker", pCreature, "")
 		else
-			createEvent(500, "DeathWatchBunkerScreenPlay", "teleportPlayer", pCreature, "")
+			--createEvent(500, "DeathWatchBunkerScreenPlay", "teleportPlayer", pCreature, "")
 		end
 	end
 end

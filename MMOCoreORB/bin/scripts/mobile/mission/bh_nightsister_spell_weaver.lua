@@ -10,8 +10,8 @@ bh_nightsister_spell_weaver = Creature:new {
 	damageMin = 645,
 	damageMax = 1000,
 	baseXp = 10174,
-	baseHAM = 24000,
-	baseHAMmax = 30000,
+	baseHAM = 34000,
+	baseHAMmax = 45000,
 	armor = 1,
 	resists = {35,100,35,90,100,100,90,100,-1},
 	meatType = "",
@@ -32,49 +32,46 @@ bh_nightsister_spell_weaver = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-        {group = "junk", chance = 3000000},
-        {group = "tailor_components", chance = 500000},
-        {group = "loot_kit_parts", chance = 500000},
-        {group = "color_crystals", chance = 500000},
-        {group = "death_watch_bh_armor_schematics", chance = 500000}, 
-        {group = "wearables_all", chance = 1000000},
-        {group = "weapons_all", chance = 1000000},
-        {group = "armor_all", chance = 1000000},
-        {group = "clothing_attachments", chance = 1000000},
-        {group = "armor_attachments", chance = 1000000}
-      },
-			lootChance = 5140000
+				{group = "junk", chance = 3000000},
+				{group = "tailor_components", chance = 500000},
+				{group = "loot_kit_parts", chance = 500000},
+				{group = "color_crystals", chance = 500000},
+				{group = "death_watch_bh_armor_schematics", chance = 2000000}, 
+				{group = "wearables_all", chance = 1000000},
+				{group = "weapons_all", chance = 500000},
+				{group = "clothing_attachments", chance = 1000000},
+				{group = "armor_attachments", chance = 1000000}
+			},
+			lootChance = 8500000
 		},
 		{
 			groups = {
-        {group = "junk", chance = 3000000},
-        {group = "tailor_components", chance = 500000},
-        {group = "loot_kit_parts", chance = 500000},
-        {group = "color_crystals", chance = 500000},
-        {group = "death_watch_bh_armor_schematics", chance = 500000}, 
-        {group = "wearables_all", chance = 1000000},
-        {group = "weapons_all", chance = 1000000},
-        {group = "armor_all", chance = 1000000},
-        {group = "clothing_attachments", chance = 1000000},
-        {group = "armor_attachments", chance = 1000000}
-      },
-			lootChance = 5140000
+				{group = "junk", chance = 3000000},
+				{group = "tailor_components", chance = 500000},
+				{group = "loot_kit_parts", chance = 500000},
+				{group = "color_crystals", chance = 500000},
+				{group = "death_watch_bh_armor_schematics", chance = 2000000}, 
+				{group = "wearables_all", chance = 1000000},
+				{group = "weapons_all", chance = 500000},
+				{group = "clothing_attachments", chance = 1000000},
+				{group = "armor_attachments", chance = 1000000}
+			},
+			lootChance = 6000000
 		},
 		{
 			groups = {
-        {group = "junk", chance = 3000000},
-        {group = "tailor_components", chance = 500000},
-        {group = "loot_kit_parts", chance = 500000},
-        {group = "color_crystals", chance = 500000},
-        {group = "death_watch_bh_armor_schematics", chance = 500000}, 
-        {group = "wearables_all", chance = 1000000},
-        {group = "weapons_all", chance = 1000000},
-        {group = "armor_all", chance = 1000000},
-        {group = "clothing_attachments", chance = 1000000},
-        {group = "armor_attachments", chance = 1000000}
-      },
-			lootChance = 5140000
-		}
+				{group = "junk", chance = 3000000},
+				{group = "tailor_components", chance = 500000},
+				{group = "loot_kit_parts", chance = 500000},
+				{group = "color_crystals", chance = 500000},
+				{group = "death_watch_bh_armor_schematics", chance = 2000000}, 
+				{group = "wearables_all", chance = 1000000},
+				{group = "weapons_all", chance = 500000},
+				{group = "clothing_attachments", chance = 1000000},
+				{group = "armor_attachments", chance = 1000000}
+			},
+			lootChance = 4000000
+		},
 	},
 
 	-- Primary and secondary weapon should be different types (rifle/carbine, carbine/pistol, rifle/unarmed, etc)

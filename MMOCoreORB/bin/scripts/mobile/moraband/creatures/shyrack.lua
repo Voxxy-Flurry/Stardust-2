@@ -3,6 +3,7 @@ shyrack = Creature:new {
 	customName = "a Shyrack",
 	socialGroup = "flewt",
 	faction = "",
+	mobType = MOB_CARNIVORE,
 	level = 19,
 	chanceHit = 0.28,
 	damageMin = 90,

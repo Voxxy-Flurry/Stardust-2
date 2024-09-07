@@ -14,6 +14,7 @@
 #include "server/zone/objects/player/sessions/SlicingSession.h"
 #include "server/zone/managers/director/DirectorManager.h"
 #include "server/zone/objects/player/PlayerObject.h"
+#include "server/zone/managers/visibility/VisibilityManager.h"
 
 void MissionTerminalImplementation::fillObjectMenuResponse(ObjectMenuResponse* menuResponse, CreatureObject* player) {
 	TerminalImplementation::fillObjectMenuResponse(menuResponse, player);
@@ -30,8 +31,15 @@ void MissionTerminalImplementation::fillObjectMenuResponse(ObjectMenuResponse* m
 		menuResponse->addRadialMenuItemToRadialID(73, 76, 3, "@city/city:south"); // South
 		menuResponse->addRadialMenuItemToRadialID(73, 77, 3, "@city/city:west"); // West
 	}
+	
 	if (terminalType == "general" || terminalType == "imperial" || terminalType == "rebel") {
 		menuResponse->addRadialMenuItem(113, 3, "Choose Mission Direction");
+	}
+	
+	if (terminalType == "bounty") {
+		if (player->getPlayerObject()->isJedi()) {
+			menuResponse->addRadialMenuItem(114, 3, "Visibility Check");
+		}
 	}
 }
 
@@ -85,6 +93,17 @@ int MissionTerminalImplementation::handleObjectMenuSelect(CreatureObject* player
 
 		mission_direction_choice->callFunction();
 		return 0;
+
+	} else if (selectedID == 114) {
+			if(player->getPlayerObject()->getVisibility() < VisibilityManager::instance()->getTerminalVisThreshold() )
+			{
+				player->sendSystemMessage("You are not known to The Guild");
+			}
+			else
+			{
+				player->sendSystemMessage("Be careful! Your actions have landed you on The Guild's watchlist. You are subject to being hunted.");
+			}
+
 
 	} else if (selectedID == 74 || selectedID == 75 || selectedID == 76 || selectedID == 77) {
 

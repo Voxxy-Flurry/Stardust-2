@@ -33,53 +33,54 @@ function tusken_king_bossScreenplay:npcDamageObserver(bossObject, playerObject, 
 
 	if (((health <= (maxHealth * 0.9))) and readData("tusken_king_bossScreenplay:spawnState") == 0) then
       			writeData("tusken_king_bossScreenplay:spawnState",1)
-			createEvent(0 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
- 			createEvent(5 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
-			createEvent(10 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
-			createEvent(15 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
-			createEvent(20 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")       
+				createEvent(0 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
+				createEvent(5 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
+				createEvent(10 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
+				createEvent(15 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
+				createEvent(20 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")       
       			CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
 	end
 
 	if (((health <= (maxHealth * 0.7))) and readData("tusken_king_bossScreenplay:spawnState") == 1) then
       			writeData("tusken_king_bossScreenplay:spawnState",2)
-			createEvent(0 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
- 			createEvent(5 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
-			createEvent(10 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
-			createEvent(15 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
-			createEvent(20 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")        
-			self:spawnSupport(playerObject)
+				createEvent(0 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
+				createEvent(5 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
+				createEvent(10 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
+				createEvent(15 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
+				createEvent(20 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")        
+				self:spawnSupport(playerObject)
       			CreatureObject(playerObject):sendSystemMessage("You hear footsteps approaching!")
       			CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
 	end
 
 	if (((health <= (maxHealth * 0.5))) and readData("tusken_king_bossScreenplay:spawnState") == 2) then
       			writeData("tusken_king_bossScreenplay:spawnState",3)
-			createEvent(0 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
- 			createEvent(5 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
-			createEvent(10 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
-			createEvent(15 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
-			createEvent(20 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")     
-			self:spawnSupport(playerObject)
+				createEvent(0 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
+				createEvent(5 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
+				createEvent(10 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
+				createEvent(15 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
+				createEvent(20 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")     
+				self:spawnSupport(playerObject)
       			CreatureObject(playerObject):sendSystemMessage("You hear more footsteps approaching!")
       			CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
 	end
 
 	if (((health <= (maxHealth * 0.3))) and readData("tusken_king_bossScreenplay:spawnState") == 3) then
       			writeData("tusken_king_bossScreenplay:spawnState",4)
-			createEvent(0 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
- 			createEvent(5 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
-			createEvent(10 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
-			createEvent(15 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
-			createEvent(20 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")      
-			self:spawnSupport(playerObject)
+				createEvent(0 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
+				createEvent(5 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
+				createEvent(10 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
+				createEvent(15 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")
+				createEvent(20 * 1000, "tusken_king_bossScreenplay", "poisonbomb", playerObject, "")      
+				self:spawnSupport(playerObject)
       			CreatureObject(playerObject):sendSystemMessage("More footsteps echo in the tunnels")
       			CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
 	end
 
 	if (((health <= (maxHealth * 0.1))) and readData("tusken_king_bossScreenplay:spawnState") == 4) then
+				self:awardToken(bossObject)
       			writeData("tusken_king_bossScreenplay:spawnState",5)
-			createEvent(0 * 1000, "tusken_king_bossScreenplay", "tuskenfinisher", playerObject, "")  
+				createEvent(0 * 1000, "tusken_king_bossScreenplay", "tuskenfinisher", playerObject, "")  
 				CreatureObject(playerObject):sendSystemMessage("The Tusken King roars and swings his Gaffi stick in a last ditch attempt to kill you.")			
       			CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
 		end
@@ -136,6 +137,35 @@ function tusken_king_bossScreenplay:spawnSupport(bossObject, playerObject)
 	CreatureObject(pGuard3):engageCombat(playerObject)
 
 end  
+
+function tusken_king_bossScreenplay:awardToken(bossObject)
+    if bossObject == nil then
+        return
+    end
+
+    local playerTable = SceneObject(bossObject):getPlayersInRange(100)
+    if playerTable == nil then
+        return
+    end
+
+    if #playerTable > 0 then
+        for i = 1, #playerTable do
+            local currentPlayer = playerTable[i]
+            if currentPlayer ~= nil then
+                local pInventory = SceneObject(currentPlayer):getSlottedObject("inventory")
+                if pInventory ~= nil then
+                    if not SceneObject(pInventory):isContainerFullRecursive() then
+                        giveItem(pInventory, "object/tangible/item/stardust_pvp_token_generic.iff", -1)
+                    else
+                        CreatureObject(currentPlayer):sendSystemMessage("You did not receive a boss token because your inventory is full.")
+                    end
+                else
+                    CreatureObject(currentPlayer):sendSystemMessage("You did not receive a boss token because your inventory is full.")
+                end
+            end
+        end
+    end
+end
 
 function tusken_king_bossScreenplay:bossDead(pBoss)
 	local creature = CreatureObject(pBoss)

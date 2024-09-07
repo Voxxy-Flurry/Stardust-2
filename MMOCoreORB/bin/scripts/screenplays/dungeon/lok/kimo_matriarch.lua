@@ -77,6 +77,7 @@ function kimo_matriarchScreenplay:npcDamageObserver(bossObject, playerObject, da
 
 	if (((health <= (maxHealth * 0.1))) and readData("kimo_matriarchScreenplay:spawnState") == 4) then
 				CreatureObject(playerObject):sendSystemMessage("The Matriarch swipes at you with her razor sharp claws in a last ditch attempt to kill you.")
+				self:awardToken(bossObject)
       			writeData("kimo_matriarchScreenplay:spawnState",5)
 				createEvent(0 * 1000, "kimo_matriarchScreenplay", "rend", playerObject, "")  			
       			CreatureObject(bossObject):playEffect("clienteffect/attacker_berserk.cef", "")
@@ -137,6 +138,35 @@ end
 function kimo_matriarchScreenplay:rend(playerObject)
 	local trapDmg = getRandomNumber(2800, 4000)
 		CreatureObject(playerObject):inflictDamage(playerObject, 0, trapDmg, 1)
+end
+
+function kimo_matriarchScreenplay:awardToken(bossObject)
+    if bossObject == nil then
+        return
+    end
+
+    local playerTable = SceneObject(bossObject):getPlayersInRange(100)
+    if playerTable == nil then
+        return
+    end
+
+    if #playerTable > 0 then
+        for i = 1, #playerTable do
+            local currentPlayer = playerTable[i]
+            if currentPlayer ~= nil then
+                local pInventory = SceneObject(currentPlayer):getSlottedObject("inventory")
+                if pInventory ~= nil then
+                    if not SceneObject(pInventory):isContainerFullRecursive() then
+                        giveItem(pInventory, "object/tangible/item/stardust_pvp_token_generic.iff", -1)
+                    else
+                        CreatureObject(currentPlayer):sendSystemMessage("You did not receive a boss token because your inventory is full.")
+                    end
+                else
+                    CreatureObject(currentPlayer):sendSystemMessage("You did not receive a boss token because your inventory is full.")
+                end
+            end
+        end
+    end
 end
 
 function kimo_matriarchScreenplay:bossDead(pBoss)
