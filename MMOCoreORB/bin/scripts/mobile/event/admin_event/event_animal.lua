@@ -25,7 +25,7 @@ event_animal = Creature:new {
 	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,
 
-	templates = {"object/intangible/pet/huurton_hue.iff"},
+	templates = {"object/mobile/huurton_hue.iff"},
 	lootGroups = {
 		{
 			groups = {
