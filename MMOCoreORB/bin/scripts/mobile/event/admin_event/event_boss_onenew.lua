@@ -23,9 +23,9 @@ event_boss_onenew = Creature:new {
 	creatureBitmask = PACK + KILLER + STALKER,
 	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,
-	scale = 3,	
+	scale = 2.5,	
 
-	templates = {"object/intangible/pet/huurton_hue.iff"},
+	templates = {"object/mobile/huurton_hue.iff"},
 	lootGroups = {
 		{
 			groups = {
