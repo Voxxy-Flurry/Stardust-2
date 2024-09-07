@@ -1,4 +1,4 @@
-event_boss_one = Creature:new {
+event_boss_onenew = Creature:new {
 	customName = "Zanix's Lost Pet (Event)",
 	faction = "kun",
 	level = 300,
@@ -171,4 +171,4 @@ event_boss_one = Creature:new {
 	secondaryAttacks = { }
 }
 
-CreatureTemplates:addCreatureTemplate(event_boss_one, "event_boss_one")
+CreatureTemplates:addCreatureTemplate(event_boss_onenew, "event_boss_onenew")

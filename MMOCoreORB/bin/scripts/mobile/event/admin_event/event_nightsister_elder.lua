@@ -1,4 +1,4 @@
-event_nightsister_elder = Creature:new {
+event_ns_eld = Creature:new {
 	objectName = "@mob/creature_names:nightsister_elder",
 	randomNameType = NAME_GENERIC,
 	randomNameTag = true,
@@ -96,4 +96,4 @@ event_nightsister_elder = Creature:new {
 	secondaryAttacks = forcepowermaster
 }
 
-CreatureTemplates:addCreatureTemplate(event_nightsister_elder, "event_nightsister_elder")
+CreatureTemplates:addCreatureTemplate(event_ns_eld, "event_ns_eld")
