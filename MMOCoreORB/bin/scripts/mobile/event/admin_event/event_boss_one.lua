@@ -1,7 +1,6 @@
 event_boss_one = Creature:new {
-	customName = "Trod's Failed Experiment (Event)",
-	socialGroup = "mercenary",
-	faction = "",
+	customName = "Zanix's Lost Pet (Event)",
+	faction = "kun",
 	level = 300,
 	chanceHit = 4.75,
 	damageMin = 1045,
@@ -26,7 +25,7 @@ event_boss_one = Creature:new {
 	diet = HERBIVORE,
 	scale = 3,	
 
-	templates = {"object/mobile/dressed_droid_enemy_05.iff"},
+	templates = {"object/intangible/pet/huurton_hue.iff"},
 	lootGroups = {
 		{
 			groups = {
@@ -163,12 +162,13 @@ event_boss_one = Creature:new {
 				lootChance = 5000000,
 		},
 	},
-	primaryWeapon = "light_jedi_weapons",
-	secondaryWeapon = "light_jedi_weapons",
+	
+	primaryWeapon = "unarmed",
+	secondaryWeapon = "none",
 	conversationTemplate = "",
 	
-	primaryAttacks = merge(lightsabermaster,forcepowermaster),
-	secondaryAttacks = merge(lightsabermaster,forcepowermaster)
+	primaryAttacks = { {"creatureareaattack","stateAccuracyBonus=50"}, {"blindattack","stateAccuracyBonus=100"}, {"posturedownattack","stateAccuracyBonus=50"}, {"creatureareacombo","stateAccuracyBonus=75"} },
+	secondaryAttacks = { }
 }
 
 CreatureTemplates:addCreatureTemplate(event_boss_one, "event_boss_one")
