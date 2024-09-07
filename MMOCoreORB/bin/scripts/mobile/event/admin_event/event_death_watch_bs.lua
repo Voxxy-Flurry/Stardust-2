@@ -1,8 +1,8 @@
-event_black_sun_guard = Creature:new {
+event_death_watch_bs = Creature:new {
 	customName = "A Black Sun Guard (Event)",
 	mobType = MOB_NPC,
-	socialGroup = "death_watch",
-	faction = "",
+	socialGroup = "kun",
+	faction = "kun",
 	level = 350,
 	chanceHit = 0.95,
 	damageMin = 1620,
@@ -82,4 +82,4 @@ event_black_sun_guard = Creature:new {
 	secondaryAttacks = brawlermaster,
 }
 
-CreatureTemplates:addCreatureTemplate(event_black_sun_guard, "event_black_sun_guard")
+CreatureTemplates:addCreatureTemplate(event_death_watch_bs, "event_death_watch_bs")

@@ -1,9 +1,7 @@
 event_death_watch_ghost = Creature:new {
 	customName = "A Death Watch Ghost (Event)",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
 	mobType = MOB_NPC,
-	socialGroup = "death_watch",
+	socialGroup = "kun",
 	faction = "",
 	level = 350,
 	chanceHit = 8.5,

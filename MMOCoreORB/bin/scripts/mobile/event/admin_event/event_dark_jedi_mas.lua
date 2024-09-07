@@ -1,8 +1,8 @@
-event_dark_jedi_master = Creature:new {
+event_dark_jedi_mas = Creature:new {
 	customName = "A Dark Jedi Master (Event)",
 	mobType = MOB_NPC,
-	socialGroup = "sith_shadow",
-	faction = "sith_shadow",
+	socialGroup = "kun",
+	faction = "kun",
 	level = 350,
 	chanceHit = 23.5,
 	damageMin = 1645,
@@ -121,4 +121,4 @@ event_dark_jedi_master = Creature:new {
 	secondaryAttacks = forcepowermaster
 }
 
-CreatureTemplates:addCreatureTemplate(event_dark_jedi_master, "event_dark_jedi_master")
+CreatureTemplates:addCreatureTemplate(event_dark_jedi_mas, "event_dark_jedi_mas")
