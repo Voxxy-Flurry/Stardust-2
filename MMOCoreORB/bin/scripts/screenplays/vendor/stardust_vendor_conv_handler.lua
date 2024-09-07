@@ -56,12 +56,18 @@ function VendorConvoHandler:runScreenHandlers(pConvTemplate, pPlayer, pNpc, sele
 		clonedScreen:addOption(self.buyArmor, "buy_armor")
 		clonedScreen:addOption(self.buyWeapons, "buy_weapons")
 		clonedScreen:addOption(self.buyVehicles, "buy_vehicles")
+		clonedScreen:addOption(self.buyBackpacks, "buy_backpacks")
 	end
 
 	if (screenID == "buy_armor") then
 		clonedScreen:setCustomDialogText(self.buyArmorDialog)
 		clonedScreen:addOption(self.saleOption_buy_armor_aw, "buy_armor_aw")
 		clonedScreen:addOption(self.saleOption_buy_armor_as, "buy_armor_as")
+	end
+
+	if (screenID == "buy_backpacks") then
+		clonedScreen:setCustomDialogText(self.buyBackpacksDialog)
+		clonedScreen:addOption(self.saleOption_backpacks, "start_sale_backpacks")
 	end
 
 	if (screenID == "buy_armor_aw") then
@@ -74,6 +80,11 @@ function VendorConvoHandler:runScreenHandlers(pConvTemplate, pPlayer, pNpc, sele
 		clonedScreen:setCustomDialogText(self.buyArmorASDialog)
 		clonedScreen:addOption(self.saleOption_segment_as, "start_sale_segment_as")
 		clonedScreen:addOption(self.saleOption_schematic_as, "start_sale_schematic_as")
+	end
+
+	if (screenID == "start_sale_backpacks") then
+		clonedScreen:setCustomDialogText(self.openSUItext)
+		self.vendorLogicType:openSUIBackpacks(pPlayer)
 	end
 
 	if (screenID == "start_sale_segment_aw") then
@@ -123,32 +134,35 @@ function VendorConvoHandler:runScreenHandlers(pConvTemplate, pPlayer, pNpc, sele
 	return pConvScreen
 end
 
-JakkuVendorConvoHandler = VendorConvoHandler:new {
+StardustVendorConvoHandler = VendorConvoHandler:new {
 	--Vendor Setup
-	vendorLogicType = JakkuVendorLogic,
+	vendorLogicType = StardustVendorLogic,
 	--Vendor Greeting
 	initialDialog = "Ya-hoo, name is Cigep C-Tier, I travel da world sellen items per special event tokens. Do you want to be buyin something?",
 	--Player selection to start buying, vendor spatial.
 	buyWindow = "Show me what you have for sale.",
-	buyArmorDialog = "I have a few thing available for armor, take a look.",
+	buyArmorDialog = "I have a few things available for armor, take a look.",
 	buyArmor = "I am interested in improving my armor.",
 	buyWeapons = "I am interested in improving my weapons.",
 	buyVehicles = "I am interested in improving my ride.",
+	buyBackpacks = "I am interested in some new backpacks.",
 	buyArmorAWDialog = "This is what I have available for Armorweaving.",
 	buyArmorASDialog = "This is what I have available for Armorsmithing.",
+	buyBackpacksDialog = "This is what I have available for Enhanced Backpacks.",
 	saleOption_buy_armor_as = "I am interested in Armorsmithing Schematics",
 	saleOption_buy_armor_aw =  "I am interested in Armorweaving Schematics",
     saleOption_segment_aw = "Armorweaving Segment Schematics",
 	saleOption_schematic_aw = "Armorweaving Clothing Schematics",
 	saleOption_segment_as = "Armorsmithing Segment Schematics",
 	saleOption_schematic_as = "Armorsmithing Schematics",
+	saleOption_backpacks = "Enhanced Backpacks",
 	openSUItext = "Take your time and stay close.",
 	saleDialog = "Okay, here's what I have for sale.",
 	--Player selection to get vendor information, vendor dialog.
 	informationFirstOption = "What sort of items do you sell?",
 	informationFirstDialog = "Lots of stuff, make sure to come back every now and again as I get updated stock with new items.",
 	--Player selection to get vendor more information, vendor dialog.
-	informationSecondOption = "How do I get Jakku PvP tokens?",
-    informationSecondDialog = "Participaten in PvP kills on Jakku. When you get some tokens, make sure to come back to me and trade you tokens for items.",
+	informationSecondOption = "How do I get Stardust Vendor tokens?",
+    informationSecondDialog = "Participaten in Various events on Stardust. When you get some tokens, make sure to come back to me and trade you tokens for items.",
 	underConstruction = "This shop is under construction. Check back after a few weeks...",
 }

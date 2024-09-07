@@ -2060,9 +2060,23 @@ Vector<ManagedReference<PlayerBounty*>> MissionManagerImplementation::getPotenti
 bool MissionManagerImplementation::isBountyValidForPlayer(CreatureObject* player, PlayerBounty* bounty) {
 	if (!bounty->isOnline())
 		return false;
+	uint64 targetId = bounty->getTargetPlayerID();
+	uint64 playerId = player->getObjectID();
+	
+	ManagedReference<CreatureObject*> creature = server->getObject(targetId).castTo<CreatureObject*>();
 
-	int maxBountiesPerJedi = ConfigManager::instance()->getInt("Core3.MissionManager.MaxBountiesPerJedi", 1);
+	if (creature == nullptr)
+		return false;
+	
+	int maxBountiesPerJedi = ConfigManager::instance()->getInt("Core3.MissionManager.MaxBountiesPerJedi", 1); // 1 BH before Knight Trials.
 
+	if (creature->hasSkill("force_rank_dark_rank_06") || creature->hasSkill("force_rank_light_rank_06")) // 2 BH at Rank 6.
+		maxBountiesPerJedi++;
+
+	if (creature->hasSkill("force_rank_dark_rank_10") || creature->hasSkill("force_rank_light_rank_10")) // 3 BH at Rank 10.
+		maxBountiesPerJedi++;
+
+	
 	if (bounty->numberOfActiveMissions() >= maxBountiesPerJedi)
 		return false;
 
@@ -2072,9 +2086,6 @@ bool MissionManagerImplementation::isBountyValidForPlayer(CreatureObject* player
 		if (building != nullptr && building->isPrivateStructure())
 			return false;
 	}
-
-	uint64 targetId = bounty->getTargetPlayerID();
-	uint64 playerId = player->getObjectID();
 
 	if (targetId == playerId)
 		return false;
@@ -2089,8 +2100,6 @@ bool MissionManagerImplementation::isBountyValidForPlayer(CreatureObject* player
 			return false;
 
 	}
-
-	ManagedReference<CreatureObject*> creature = server->getObject(targetId).castTo<CreatureObject*>();
 
 	if (creature == nullptr)
 		return false;
@@ -2125,7 +2134,7 @@ bool MissionManagerImplementation::isBountyValidForPlayer(CreatureObject* player
 	}
 
 	if (ConfigManager::instance()->getBool("Core3.MissionManager.PlayerBountyCooldown", true)) {
-		int cooldownTime = ConfigManager::instance()->getInt("Core3.MissionManager.PlayerBountyCooldownTime", 86400000); // 24 hour default
+		int cooldownTime = ConfigManager::instance()->getInt("Core3.MissionManager.PlayerBountyCooldownTime", 3600000); // 1 Hour.
 
 		if (!bounty->canTakeMission(player->getObjectID(), cooldownTime)) {
 			return false;

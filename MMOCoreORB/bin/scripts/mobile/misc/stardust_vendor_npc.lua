@@ -1,6 +1,6 @@
-jakku_vendor_npc = Creature:new {
+stardust_vendor_npc = Creature:new {
 	--objectName = "@mob/creature_names:patron_chiss_male",
-	customName = "Jakku Token Vendor",
+	customName = "Stardust Token Vendor",
 	socialGroup = "townsperson",
 	faction = "townsperson",
 	mobType = MOB_NPC,
@@ -23,18 +23,18 @@ jakku_vendor_npc = Creature:new {
 	tamingChance = 0,
 	ferocity = 0,
 	pvpBitmask = NONE,
-	creatureBitmask = PACK,
+	creatureBitmask = NONE,
 	optionsBitmask = AIENABLED + CONVERSABLE,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_patron_chiss_m_01.iff"},
+	templates = {"object/mobile/npe/npc_dressed_crazed_soldier.iff"},
 	lootGroups = {},
 
 	-- Primary and secondary weapon should be different types (rifle/carbine, carbine/pistol, rifle/unarmed, etc)
 	-- Unarmed should be put on secondary unless the mobile doesn't use weapons, in which case "unarmed" should be put primary and "none" as secondary
 	primaryWeapon = "unarmed",
 	secondaryWeapon = "none",
-	conversationTemplate = "JakkuVendorConvoTemplate",
+	conversationTemplate = "StardustVendorConvoTemplate",
 	
 	-- primaryAttacks and secondaryAttacks should be separate skill groups specific to the weapon type listed in primaryWeapon and secondaryWeapon
 	-- Use merge() to merge groups in creatureskills.lua together. If a weapon is set to "none", set the attacks variable to empty brackets
@@ -42,4 +42,4 @@ jakku_vendor_npc = Creature:new {
 	secondaryAttacks = { }
 }
 
-CreatureTemplates:addCreatureTemplate(jakku_vendor_npc, "jakku_vendor_npc")
+CreatureTemplates:addCreatureTemplate(stardust_vendor_npc, "stardust_vendor_npc")

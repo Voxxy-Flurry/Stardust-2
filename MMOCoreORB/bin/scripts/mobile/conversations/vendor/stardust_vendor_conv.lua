@@ -1,7 +1,7 @@
-JakkuVendorConvoTemplate = ConvoTemplate:new {
+StardustVendorConvoTemplate = ConvoTemplate:new {
 	initialScreen = "initial",
 	templateType = "Lua",
-	luaClassHandler = "JakkuVendorConvoHandler",
+	luaClassHandler = "StardustVendorConvoHandler",
 	screens = {}
 }
 
@@ -12,7 +12,7 @@ initial = ConvoScreen:new {
 	options = {
 	}
 }
-JakkuVendorConvoTemplate:addScreen(initial);
+StardustVendorConvoTemplate:addScreen(initial);
 
 buy_window = ConvoScreen:new {
 	id = "buy_window",
@@ -20,7 +20,7 @@ buy_window = ConvoScreen:new {
 	stopConversation = "false",
 	options = {}
 }
-JakkuVendorConvoTemplate:addScreen(buy_window);
+StardustVendorConvoTemplate:addScreen(buy_window);
 
 buy_armor = ConvoScreen:new {
 	id = "buy_armor",
@@ -28,7 +28,7 @@ buy_armor = ConvoScreen:new {
 	stopConversation = "false",
 	options = {}
 }
-JakkuVendorConvoTemplate:addScreen(buy_armor);
+StardustVendorConvoTemplate:addScreen(buy_armor);
 
 buy_armor_as = ConvoScreen:new {
 	id = "buy_armor_as",
@@ -36,7 +36,7 @@ buy_armor_as = ConvoScreen:new {
 	stopConversation = "false",
 	options = {}
 }
-JakkuVendorConvoTemplate:addScreen(buy_armor_as);
+StardustVendorConvoTemplate:addScreen(buy_armor_as);
 
 buy_armor_aw = ConvoScreen:new {
 	id = "buy_armor_aw",
@@ -44,7 +44,23 @@ buy_armor_aw = ConvoScreen:new {
 	stopConversation = "false",
 	options = {}
 }
-JakkuVendorConvoTemplate:addScreen(buy_armor_aw);
+StardustVendorConvoTemplate:addScreen(buy_armor_aw);
+
+buy_backpacks = ConvoScreen:new {
+	id = "buy_backpacks",
+	customDialogText = "",
+	stopConversation = "false",
+	options = {}
+}
+StardustVendorConvoTemplate:addScreen(buy_backpacks);
+
+start_sale_backpacks = ConvoScreen:new {
+	id = "start_sale_backpacks",
+	customDialogText = "",
+	stopConversation = "true",
+	options = {}
+}
+StardustVendorConvoTemplate:addScreen(start_sale_backpacks);
 
 start_sale_segment_aw = ConvoScreen:new {
 	id = "start_sale_segment_aw",
@@ -52,7 +68,7 @@ start_sale_segment_aw = ConvoScreen:new {
 	stopConversation = "true",
 	options = {}
 }
-JakkuVendorConvoTemplate:addScreen(start_sale_segment_aw);
+StardustVendorConvoTemplate:addScreen(start_sale_segment_aw);
 
 start_sale_schematic_aw = ConvoScreen:new {
 	id = "start_sale_schematic_aw",
@@ -60,7 +76,7 @@ start_sale_schematic_aw = ConvoScreen:new {
 	stopConversation = "true",
 	options = {}
 }
-JakkuVendorConvoTemplate:addScreen(start_sale_schematic_aw);
+StardustVendorConvoTemplate:addScreen(start_sale_schematic_aw);
 
 start_sale_segment_as = ConvoScreen:new {
 	id = "start_sale_segment_as",
@@ -68,7 +84,7 @@ start_sale_segment_as = ConvoScreen:new {
 	stopConversation = "true",
 	options = {}
 }
-JakkuVendorConvoTemplate:addScreen(start_sale_segment_as);
+StardustVendorConvoTemplate:addScreen(start_sale_segment_as);
 
 start_sale_schematic_as = ConvoScreen:new {
 	id = "start_sale_schematic_as",
@@ -76,7 +92,7 @@ start_sale_schematic_as = ConvoScreen:new {
 	stopConversation = "true",
 	options = {}
 }
-JakkuVendorConvoTemplate:addScreen(start_sale_schematic_as);
+StardustVendorConvoTemplate:addScreen(start_sale_schematic_as);
 
 buy_weapons = ConvoScreen:new {
 	id = "buy_weapons",
@@ -84,7 +100,7 @@ buy_weapons = ConvoScreen:new {
 	stopConversation = "true",
 	options = {}
 }
-JakkuVendorConvoTemplate:addScreen(buy_weapons);
+StardustVendorConvoTemplate:addScreen(buy_weapons);
 
 buy_vehicles = ConvoScreen:new {
 	id = "buy_vehicles",
@@ -92,7 +108,7 @@ buy_vehicles = ConvoScreen:new {
 	stopConversation = "true",
 	options = {}
 }
-JakkuVendorConvoTemplate:addScreen(buy_vehicles);
+StardustVendorConvoTemplate:addScreen(buy_vehicles);
 
 information_first = ConvoScreen:new {
 	id = "information_first",
@@ -100,7 +116,7 @@ information_first = ConvoScreen:new {
 	stopConversation = "false",
 	options = {}
 }
-JakkuVendorConvoTemplate:addScreen(information_first);
+StardustVendorConvoTemplate:addScreen(information_first);
 
 information_second = ConvoScreen:new {
 	id = "information_second",
@@ -108,7 +124,7 @@ information_second = ConvoScreen:new {
 	stopConversation = "false",
 	options = {}
 }
-JakkuVendorConvoTemplate:addScreen(information_second);
+StardustVendorConvoTemplate:addScreen(information_second);
 
 factionRestriction = ConvoScreen:new {
 	id = "factionRestriction",
@@ -116,12 +132,12 @@ factionRestriction = ConvoScreen:new {
 	stopConversation = "true",
 	options = {}
 }
-JakkuVendorConvoTemplate:addScreen(factionRestriction);
+StardustVendorConvoTemplate:addScreen(factionRestriction);
 
-addConversationTemplate("JakkuVendorConvoTemplate", JakkuVendorConvoTemplate);
+addConversationTemplate("StardustVendorConvoTemplate", StardustVendorConvoTemplate);
 
-AWVendorConvoTemplate = JakkuVendorConvoTemplate:new {
-	luaClassHandler = "JakkuVendorConvoHandler"
+AWVendorConvoTemplate = StardustVendorConvoTemplate:new {
+	luaClassHandler = "StardustVendorConvoHandler"
 }
 
 addConversationTemplate("AWVendorConvoTemplate", AWVendorConvoTemplate);

@@ -2101,36 +2101,47 @@ float CombatManager::getDefenderToughnessModifier(CreatureObject* defender, int 
 	ManagedReference<WeaponObject*> weapon = defender->getWeapon();
 
 	const auto defenseToughMods = weapon->getDefenderToughnessModifiers();
-
-	if (attackType == weapon->getAttackType()) {
-		for (int i = 0; i < defenseToughMods->size(); ++i) {
-			int toughMod = defender->getSkillMod(defenseToughMods->get(i));
-			if (toughMod > 0)
-				damage *= 1.f - (toughMod / 300.f);
-		}
-	}
-
 	int jediToughness = defender->getSkillMod("jedi_toughness");
 	int forceArmor = defender->getSkillMod("force_armor");
 	int saberToughness = defender->getSkillMod("lightsaber_toughness");
 
+	if (attackType == weapon->getAttackType()) {
+		for (int i = 0; i < defenseToughMods->size(); ++i) {
+			int toughMod = defender->getSkillMod(defenseToughMods->get(i));
+			if (toughMod > 0 && jediToughness == 0 && saberToughness == 0)
+				damage *= 1.f - (toughMod / 300.f);
+		}
+	}
+		
 	if (damType != SharedWeaponObjectTemplate::LIGHTSABER && jediToughness > 0 && forceArmor <= 0 && isWearingArmor(defender)){
 		damage *= 1.f - (jediToughness / 500.f);
 		defender->sendSystemMessage("You have armor on, your Jedi Toughness has been disabled for this attack!!");
+
 	}else if (damType != SharedWeaponObjectTemplate::LIGHTSABER && jediToughness > 0 && forceArmor <= 0){
-		damage *= 1.f - (jediToughness / 78.f);
+		int maxReduction = 81;
+    	int curvePlacement = 2.5;
+    	float growthRate = -0.085;
+   		float growthCurve = 2.5;
+		damage *= 1 - (.01f * (maxReduction / (pow(1 + curvePlacement * exp(growthRate * jediToughness), growthCurve))));
+		
 	}
 
-	if (damType != SharedWeaponObjectTemplate::LIGHTSABER && saberToughness > 0 && forceArmor <= 0 && isWearingArmor(defender)){
+	if (damType == SharedWeaponObjectTemplate::LIGHTSABER && saberToughness > 0 && forceArmor <= 0 && isWearingArmor(defender)){
 		damage *= 1.f - (saberToughness / 500.f);
 		defender->sendSystemMessage("You have armor on, your Lightsaber Toughness has been disabled for this attack!!");
-	}else if (damType != SharedWeaponObjectTemplate::LIGHTSABER && saberToughness > 0 && forceArmor <= 0){
-		damage *= 1.f - (saberToughness / 150.f);
+
+	}else if (damType == SharedWeaponObjectTemplate::LIGHTSABER && saberToughness > 0 && forceArmor <= 0){
+		int maxReduction = 80;
+    	int curvePlacement = 5;
+    	float growthRate = -0.085;
+   		float growthCurve = 1;
+		damage *= 1 - (.01f * (maxReduction / (pow(1 + curvePlacement * exp(growthRate * saberToughness), growthCurve))));
 	}
 
 
 	return damage < 0 ? 0 : damage;
 }
+
 bool CombatManager::isWearingArmor(CreatureObject* creo) const {
 	for (int i = 0; i < creo->getSlottedObjectsSize(); ++i) {
 		SceneObject* item = creo->getSlottedObject(i);

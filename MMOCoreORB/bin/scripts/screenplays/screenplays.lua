@@ -686,8 +686,9 @@ includeFile("sphelper.lua")
 --  Start all Stardust Content Here.
 
 -- Vendors
-includeFile("vendor/jakku_vendor_logic.lua")
-includeFile("vendor/jakku_vendor_conv_handler.lua")
+includeFile("vendor/stardust_vendor_logic.lua")
+includeFile("vendor/stardust_vendor_conv_handler.lua")
+includeFile("vendor/stardust_vendor_spawn.lua")
 
 -- Chandrila
 includeFile("cities/chandrila_hanna_city.lua")
@@ -868,3 +869,10 @@ includeFile("poi/isd_active_areas.lua")
 -- Village enhancements
 includeFile("heroics/aurilian_teleporter.lua")
 
+--Custom Bosses
+includeFile("dungeon/tusken/tusken_king_boss.lua")
+includeFile("dungeon/rori/imperial_remnant.lua")
+includeFile("dungeon/the_collector_spawn.lua")
+includeFile("dungeon/lok/kimo_matriarch.lua")
+includeFile("dungeon/dantooine/dant_disciple_boss.lua")
+includeFile("dungeon/dathomir/dath_disciple_boss.lua")

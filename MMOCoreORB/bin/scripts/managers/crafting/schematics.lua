@@ -2180,6 +2180,7 @@ schematics = {
   {path="object/draft_schematic/weapon/sword_bandit.iff"},
   {path="object/draft_schematic/weapon/sword_obsidian.iff"},
   {path="object/draft_schematic/weapon/sword_acid.iff"},
+  {path="object/draft_schematic/weapon/sword_junti_mace.iff"},
   {path="object/draft_schematic/weapon/sword_massassi.iff"},
   {path="object/draft_schematic/weapon/sword_rsf.iff"},
   {path="object/draft_schematic/weapon/2h_sword_obsidian.iff"},
@@ -2213,4 +2214,6 @@ schematics = {
   {path="object/draft_schematic/armor/armor_appearance_rebel_marine_gloves.iff"},
   {path="object/draft_schematic/armor/armor_appearance_rebel_marine_helmet.iff"},
   {path="object/draft_schematic/armor/armor_appearance_rebel_marine_leggings.iff"},
+
+  {path="object/draft_schematic/clothing/stardust_backpack_schematic.iff"},
 };
