@@ -1,7 +1,7 @@
 boss_three = Creature:new {
-	customName = "Insane Al-a-din (Event)",
+	customName = "Short Larry (Event)",
 	socialGroup = "kun",
-	faction = "",
+	faction = "kun",
 	level = 300,
 	chanceHit = 4.75,
 	damageMin = 3045,
@@ -26,7 +26,7 @@ boss_three = Creature:new {
 	diet = HERBIVORE,
 	scale = 1.5,	
 
-	templates = {"object/mobile/ep3/palpatine_hologram.iff"},
+	templates = {"object/mobile/som/ruins_ithorian.iff"},
 	lootGroups = {
 		{
 			groups = {
