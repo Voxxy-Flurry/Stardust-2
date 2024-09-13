@@ -27,7 +27,7 @@ object_draft_schematic_weapon_sword_junti_mace = object_draft_schematic_weapon_s
    contribution = {100, 100, 100, 100, 100, 100},
 
 
-   targetTemplate = "object/weapon/melee/sword/sword_junti_mace.iff",
+   targetTemplate = "object/weapon/melee/sword/sword_mace_junti.iff",
 
    additionalTemplates = {
              }
