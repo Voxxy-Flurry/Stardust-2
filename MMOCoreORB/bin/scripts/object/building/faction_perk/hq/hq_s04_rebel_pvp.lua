@@ -89,8 +89,8 @@ object_building_faction_perk_hq_hq_s04_rebel_pvp = object_building_faction_perk_
 		{ templateFile = "object/tangible/terminal/terminal_mission.iff", x = 18.61, z = -13.8, y = 14.59, ox = 0, oy = -0.707, oz = 0, ow = 0.707, cellid = 9, containmentType = -1 },
 		{ templateFile = "object/tangible/terminal/terminal_mission_rebel.iff", x = 18.6, z = -13.8, y = -0.76, ox = 0, oy = -0.707, oz = 0, ow = 0.707, cellid = 9, containmentType = -1 },
 
-		{ templateFile = "object/tangible/terminal/terminal_bank.iff", x = -7.1, z = -13.7, y = 0.52, ox = 0, oy = 0.707, oz = 0, ow = 0.707, cellid = 7, containmentType = -1 },
-		{ templateFile = "object/tangible/terminal/terminal_bank.iff", x = -7.1, z = -13.7, y = -7.05, ox = 0, oy = 0.707, oz = 0, ow = 0.707, cellid = 7, containmentType = -1 },
+		--{ templateFile = "object/tangible/terminal/terminal_bank.iff", x = -7.1, z = -13.7, y = 0.52, ox = 0, oy = 0.707, oz = 0, ow = 0.707, cellid = 7, containmentType = -1 },
+		--{ templateFile = "object/tangible/terminal/terminal_bank.iff", x = -7.1, z = -13.7, y = -7.05, ox = 0, oy = 0.707, oz = 0, ow = 0.707, cellid = 7, containmentType = -1 },
 
 		{ templateFile = "object/tangible/terminal/terminal_insurance.iff", x = -0.8, z = -13.7, y = -13.7, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 7, containmentType = -1 },
 

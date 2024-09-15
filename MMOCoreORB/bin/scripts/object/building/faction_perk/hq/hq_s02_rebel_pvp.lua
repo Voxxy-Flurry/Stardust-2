@@ -85,8 +85,8 @@ object_building_faction_perk_hq_hq_s02_rebel_pvp = object_building_faction_perk_
 		{ templateFile = "object/tangible/terminal/terminal_mission.iff", x = 0.25, z = -6.8, y = -6.45, ox = 0, oy = -0.707, oz = 0, ow = 0.707, cellid = 5, containmentType = -1 },
 		{ templateFile = "object/tangible/terminal/terminal_mission_rebel.iff", x = -9.25, z = -6.8, y = -6.45, ox = 0, oy = 0.707, oz = 0, ow = 0.707, cellid = 5, containmentType = -1 },
 
-		{ templateFile = "object/tangible/terminal/terminal_bank.iff", x = 9.13, z = -6.8, y = -6.98, ox = 0, oy = -0.707, oz = 0, ow = 0.707, cellid = 7, containmentType = -1 },
-		{ templateFile = "object/tangible/terminal/terminal_bank.iff", x = 9.13, z = -6.8, y = -2.29, ox = 0, oy = -0.707, oz = 0, ow = 0.707, cellid = 7, containmentType = -1 },
+		--{ templateFile = "object/tangible/terminal/terminal_bank.iff", x = 9.13, z = -6.8, y = -6.98, ox = 0, oy = -0.707, oz = 0, ow = 0.707, cellid = 7, containmentType = -1 },
+		--{ templateFile = "object/tangible/terminal/terminal_bank.iff", x = 9.13, z = -6.8, y = -2.29, ox = 0, oy = -0.707, oz = 0, ow = 0.707, cellid = 7, containmentType = -1 },
 
 		-- Base Alarms
 		{ templateFile = "object/tangible/faction_perk/faction_base_item/alarm_hack.iff", x = -3.69, z = 3.75, y = 3.19, ow = -0.011, ox = 0.99, oy = 0.017, oz = 0.002550, cellid = 2, containmentType = -1 },
