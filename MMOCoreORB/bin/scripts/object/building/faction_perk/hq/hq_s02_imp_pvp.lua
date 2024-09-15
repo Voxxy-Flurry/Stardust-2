@@ -102,8 +102,8 @@ object_building_faction_perk_hq_hq_s02_imp_pvp = object_building_faction_perk_hq
 		{ templateFile = "object/tangible/terminal/terminal_mission.iff", x = -0.27, z = -6.75, y = -6.52, ox = 0, oy = 0.707, oz = 0, ow = -0.707, cellid = 5, containmentType = -1 },
 		{ templateFile = "object/tangible/terminal/terminal_mission_imperial.iff", x = -8.9, z = -6.75, y = -6.47, ox = 0, oy = 0.707, oz = 0, ow = 0.707, cellid = 5, containmentType = -1 },
 
-		{ templateFile = "object/tangible/terminal/terminal_bank.iff", x = -8.42, z = -6.77, y = -15.03, ox = 0, oy = 0.707, oz = 0, ow = 0.707, cellid = 6, containmentType = -1 },
-		{ templateFile = "object/tangible/terminal/terminal_bank.iff", x = 9.49, z = -6.77, y = -14.98, ox = 0, oy = 0.707, oz = 0, ow = -0.707, cellid = 6, containmentType = -1 },
+		--{ templateFile = "object/tangible/terminal/terminal_bank.iff", x = -8.42, z = -6.77, y = -15.03, ox = 0, oy = 0.707, oz = 0, ow = 0.707, cellid = 6, containmentType = -1 },
+		--{ templateFile = "object/tangible/terminal/terminal_bank.iff", x = 9.49, z = -6.77, y = -14.98, ox = 0, oy = 0.707, oz = 0, ow = -0.707, cellid = 6, containmentType = -1 },
 
 		{ templateFile = "object/tangible/terminal/terminal_hq_imperial.iff", x = 0, z = 0.25, y = 1.86, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 2, containmentType = -1 },
 
