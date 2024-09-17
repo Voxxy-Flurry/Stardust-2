@@ -2080,13 +2080,6 @@ bool MissionManagerImplementation::isBountyValidForPlayer(CreatureObject* player
 	if (bounty->numberOfActiveMissions() >= maxBountiesPerJedi)
 		return false;
 
-	if (!ConfigManager::instance()->getBool("Core3.MissionManager.PrivateStructureJediMissions", true)) {
-		ManagedReference<BuildingObject*> building = cast<BuildingObject*>(player->getRootParent());
-
-		if (building != nullptr && building->isPrivateStructure())
-			return false;
-	}
-
 	if (targetId == playerId)
 		return false;
 
@@ -2119,6 +2112,12 @@ bool MissionManagerImplementation::isBountyValidForPlayer(CreatureObject* player
 
 	if (!enableSameAccountBountyMissions && targetGhost->getAccountID() == accountId)
 		return false;
+
+	ManagedReference<BuildingObject*> building = cast<BuildingObject*>(creature->getRootParent());
+	if (!ConfigManager::instance()->getBool("Core3.MissionManager.PrivateStructureJediMissions", false)) {
+		if (building != nullptr && building->isPrivateStructure())
+			return false;
+	}
 
 	auto hunters = bounty->getBountyHunters();
 
