@@ -94,6 +94,8 @@ end
 
 function HannaCityScreenPlay:spawnMobiles()
 
+  spawnMobile("chandrila", "informant_npc_lvl_3", 1, 323, 7, 4685, 0, 0)
+
 	--Outdoors
 	local pNpc = spawnMobile("chandrila", "surgical_droid_21b",60,3.1,0.1,11.5,0,0)
 	self:setMoodString(pNpc, "neutral")
