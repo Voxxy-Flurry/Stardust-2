@@ -28,9 +28,11 @@ public:
 		// This command only works on the player executing the command
 
 		Locker locker(creature);
-
+		TransactionLog trx(TrxCode::SKILLTRAININGSYSTEM, creature);
+		ManagedReference<PlayerObject*> ghost = creature->getPlayerObject();
 		SkillManager* skillManager = SkillManager::instance();
 		const SkillList* skillList = creature->getSkillList();
+		int frsXP = ghost->getExperience("force_rank_xp");
 
 		if (skillList == nullptr)
 			return GENERALERROR;
@@ -99,6 +101,23 @@ public:
 				bool skillGranted = skillManager->awardSkill(skillName, creature, true, true, true);
 				creature->sendSystemMessage("Regranting Skill: " + skillName);
 			}
+		}
+
+		//Check for Jedi then FRS amount.
+		if (creature->hasSkill("force_title_jedi_rank_03")){
+			if (ghost->getExperience("force_rank_xp") <= 0){
+
+				creature->sendSystemMessage("Completed. Force Rank Experience has been set to: " + String::valueOf(frsXP));
+
+				TransactionLog trxExperience(TrxCode::EXPERIENCE, creature);
+				trxExperience.groupWith(trx);
+				ghost->addExperience(trxExperience, "force_rank_xp", frsXP, true);
+
+			}else{
+				creature->sendSystemMessage("Completed. Force Rank Experience has remained unchanged: " + String::valueOf(frsXP));
+			}
+		}else{
+			creature->sendSystemMessage("Completed.");
 		}
 
 		return SUCCESS;
