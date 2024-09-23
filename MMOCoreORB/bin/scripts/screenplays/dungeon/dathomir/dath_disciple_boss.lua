@@ -215,7 +215,7 @@ function dath_discipleScreenplay:bossDead(pBoss)
 end
 
 function dath_discipleScreenplay:KillSpawn()
-		self:SpawnMobiles()
+		self:spawnMobiles()
 end
 
 function dath_discipleScreenplay:KillBoss(pBoss)
