@@ -3,7 +3,7 @@
 bh_armor_bracer_r = {
 	minimumLevel = 0,
 	maximumLevel = -1,
-	customObjectName = "",
+	customObjectName = "Bounty Hunter Armor Right Bracer",
 	directObjectTemplate = "object/tangible/wearables/armor/bounty_hunter/armor_bounty_hunter_bracer_r.iff",
 	craftingValues = {
 		{"armor_rating",1,1,0},
