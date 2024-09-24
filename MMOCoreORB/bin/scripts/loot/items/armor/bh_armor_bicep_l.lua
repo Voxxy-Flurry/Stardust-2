@@ -3,7 +3,7 @@
 bh_armor_bicep_l = {
 	minimumLevel = 0,
 	maximumLevel = -1,
-	customObjectName = "",
+	customObjectName = "Bounty Hunter Armor Left Bicep",
 	directObjectTemplate = "object/tangible/wearables/armor/bounty_hunter/armor_bounty_hunter_bicep_l.iff",
 	craftingValues = {
 		{"armor_rating",1,1,0},
