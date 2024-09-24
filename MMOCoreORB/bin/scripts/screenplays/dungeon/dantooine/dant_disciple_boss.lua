@@ -216,9 +216,7 @@ function dant_discipleScreenplay:bossDead(pBoss)
 end
 
 function dant_discipleScreenplay:KillSpawn()
-		local pBoss = spawnMobile("dantooine", "dant_disciple",-1,-91.6,-100.4,-93.6,-178,529333)
-		createObserver(DAMAGERECEIVED, "dant_discipleScreenplay", "npcDamageObserver", pBoss)
-		createObserver(OBJECTDESTRUCTION, "dant_discipleScreenplay", "bossDead", pBoss)
+		self:spawnMobiles()
 end
 
 function dant_discipleScreenplay:KillBoss(pBoss)
