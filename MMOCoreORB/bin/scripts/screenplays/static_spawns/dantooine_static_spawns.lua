@@ -35,6 +35,8 @@ function DantooineStaticSpawnsScreenPlay:spawnMobiles()
 	-- Stoner Spynet
 	spawnMobile("dantooine", "informant_npc_lvl_3", 1, -4365.2, 1.9, 7109.9, 178, 0)
 
+	--Sanctuary Spynet
+	spawnMobile("dantooine", "informant_npc_lvl_3", 1, 376.1, 1.3, -3484.8, -94, 0)
 
 	spawnMobile("dantooine", "dark_jedi_master", 3600, -738.2, 1.7, 2103.9, 55, 0)
 
