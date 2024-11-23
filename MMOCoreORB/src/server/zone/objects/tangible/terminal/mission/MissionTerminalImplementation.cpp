@@ -97,11 +97,13 @@ int MissionTerminalImplementation::handleObjectMenuSelect(CreatureObject* player
 	} else if (selectedID == 114) {
 			if(player->getPlayerObject()->getVisibility() < VisibilityManager::instance()->getTerminalVisThreshold() )
 			{
-				player->sendSystemMessage("You are not known to The Guild");
+				visAmount = player->getPlayerObject()->getVisibility()
+				player->sendSystemMessage("Your current visibility level is " + visAmount " / 10,000. You are not known to The Guild");
 			}
 			else
 			{
-				player->sendSystemMessage("Be careful! Your actions have landed you on The Guild's watchlist. You are subject to being hunted.");
+				visAmount = player->getPlayerObject()->getVisibility()
+				player->sendSystemMessage("Your current visibility level is " + visAmount " / 10,000. The Guild is actively hunting you, take care.");
 			}
 
 
