@@ -35,7 +35,7 @@ function dant_discipleScreenplay:npcDamageObserver(bossObject, playerObject, dam
 	
 	if (((health <= (maxHealth * 0.99))) and readData("dant_discipleScreenplay:spawnState") == 0) then
 	writeData("dant_discipleScreenplay:spawnState",1)
-      		spatialChat(bossObject, "It was foolish of you to challenge me.)
+      		spatialChat(bossObject, "It was foolish of you to challenge me.")
 			createEvent(5 * 1000, "dant_discipleScreenplay", "rockthrow_last", playerObject, "")
  			createEvent(10 * 1000, "dant_discipleScreenplay", "rockthrow_last", playerObject, "")   			
       		CreatureObject(bossObject):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
