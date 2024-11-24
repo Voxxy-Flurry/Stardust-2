@@ -12,9 +12,9 @@ end
 
 
 function dant_discipleScreenplay:spawnMobiles()
-		local pBoss = spawnMobile("dantooine", "dant_disciple",-1,4194.7,9,5201,25,15098000)
-		spawnMobile("dantooine", "janta_scion",900,4198,9,5198,24,15098000)
-		spawnMobile("dantooine", "janta_scion",900,4189.8,9,5202.1,24,15098000)
+		local pBoss = spawnMobile("dantooine", "dant_disciple",-1,4331.3,25.8,3907.1,-14,15098000)
+		spawnMobile("dantooine", "janta_scion",900,4335.6,25.7,3910.4,-28,15098000)
+		spawnMobile("dantooine", "janta_scion",900,4326.1,25.0,3907.9,14,15098000)
 		local creature = CreatureObject(pBoss)
 		createObserver(DAMAGERECEIVED, "dant_discipleScreenplay", "npcDamageObserver", pBoss)    
 		createObserver(OBJECTDESTRUCTION, "dant_discipleScreenplay", "bossDead", pBoss)
@@ -35,7 +35,7 @@ function dant_discipleScreenplay:npcDamageObserver(bossObject, playerObject, dam
 	
 	if (((health <= (maxHealth * 0.99))) and readData("dant_discipleScreenplay:spawnState") == 0) then
 	writeData("dant_discipleScreenplay:spawnState",1)
-      		spatialChat(bossObject, "It was foolish of you to enter this sanctuary.")
+      		spatialChat(bossObject, "It was foolish of you to challenge me.)
 			createEvent(5 * 1000, "dant_discipleScreenplay", "rockthrow_last", playerObject, "")
  			createEvent(10 * 1000, "dant_discipleScreenplay", "rockthrow_last", playerObject, "")   			
       		CreatureObject(bossObject):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
