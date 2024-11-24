@@ -44,8 +44,11 @@
 object_tangible_wearables_armor_mandalorian_armor_mandalorian_bicep_r = object_tangible_wearables_armor_mandalorian_shared_armor_mandalorian_bicep_r:new {
 	templateType = ARMOROBJECT,
 
-  certificationsRequired = { "combat_bountyhunter_novice",
-          "combat_commando_novice"},
+	certificationsRequired = { 
+		"combat_bountyhunter_novice",
+        "combat_commando_novice",
+		"outdoors_squadleader_master"
+		},
           
   objectMenuComponent = "ArmorObjectMenuComponent",
 
