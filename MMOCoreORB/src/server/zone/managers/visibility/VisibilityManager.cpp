@@ -59,7 +59,7 @@ float VisibilityManager::calculateVisibilityIncrease(CreatureObject* creature) {
 
 		if (!creature->isInRange(c, 32) || !CollisionManager::checkLineOfSight(creature, c))
 			continue;
-
+		if (creature->hasSkill("force_title_jedi_rank_03")) {
 		if (creature->getFaction() == 0 || (c->getFaction() != factionImperial && c->getFaction() != factionRebel)) {
 			visibilityIncrease += 0.5;
 			//info(c->getCreatureName().toString() + " generating a 0.5 visibility modifier", true);
@@ -72,7 +72,7 @@ float VisibilityManager::calculateVisibilityIncrease(CreatureObject* creature) {
 				//info( c->getCreatureName().toString() + " generating a 1.0 visibility modifier", true);
 			}
 		}
-
+		}
 	}
 
 	//info("Increasing visibility for player " + String::valueOf(creature->getObjectID()) + " with " + String::valueOf(visibilityIncrease), true);
