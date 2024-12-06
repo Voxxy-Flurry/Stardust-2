@@ -1,5 +1,5 @@
 boss_three = Creature:new {
-	customName = "Short Larry (Event)",
+	customName = "Vock See (Event)",
 	socialGroup = "kun",
 	faction = "kun",
 	level = 300,
@@ -7,10 +7,10 @@ boss_three = Creature:new {
 	damageMin = 3045,
 	damageMax = 4500,
 	baseXp = 25167,
-	baseHAM = 1961000,
-	baseHAMmax = 3020000,
+	baseHAM = 1161000,
+	baseHAMmax = 2220000,
 	armor = 2,
-	resists = {90,90,90,90,90,90,-1,90,90},
+	resists = {80,80,80,-1,80,80,-1,80,70},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -26,7 +26,7 @@ boss_three = Creature:new {
 	diet = HERBIVORE,
 	scale = 1.5,	
 
-	templates = {"object/mobile/som/ruins_ithorian.iff"},
+	templates = {"object/mobile/wod_second_sister.iff"},
 	lootGroups = {
 		{
 			groups = {
