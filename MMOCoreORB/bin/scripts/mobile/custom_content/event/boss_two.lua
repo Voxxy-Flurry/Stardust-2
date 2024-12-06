@@ -1,5 +1,5 @@
 boss_two = Creature:new {
-	customName = "A Vending Machine Employee (Event)",
+	customName = "Trod's Juggernaut (Event)",
 	socialGroup = "kun",
 	faction = "kun",
 	level = 300,
@@ -7,8 +7,8 @@ boss_two = Creature:new {
 	damageMin = 1545,
 	damageMax = 3500,
 	baseXp = 25167,
-	baseHAM = 1361000,
-	baseHAMmax = 2220000,
+	baseHAM = 1161000,
+	baseHAMmax = 1520000,
 	armor = 2,
 	resists = {65,70,55,70,60,55,70,55,75},
 	meatType = "",
@@ -26,7 +26,7 @@ boss_two = Creature:new {
 	diet = HERBIVORE,
 	scale = 1.4,
 
-	templates = {"object/mobile/dressed_stormtrooper_black_black.iff"},
+	templates = {"object/mobile/npe/npe_droid_i10_probe.iff"},
 		lootGroups = {
 		{
 			groups = {

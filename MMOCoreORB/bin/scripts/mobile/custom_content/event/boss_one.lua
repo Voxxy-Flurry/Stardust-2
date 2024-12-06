@@ -1,5 +1,5 @@
 boss_one = Creature:new {
-	customName = "Nasty Chuck (Event)",
+	customName = "Faaaaaaaaarkin (Event)",
 	socialGroup = "kun",
 	faction = "kun",
 	level = 300,
@@ -7,8 +7,8 @@ boss_one = Creature:new {
 	damageMin = 1045,
 	damageMax = 2500,
 	baseXp = 25167,
-	baseHAM = 1361000,
-	baseHAMmax = 2020000,
+	baseHAM = 1161000,
+	baseHAMmax = 1520000,
 	armor = 2,
 	resists = {65,70,55,70,60,55,70,55,75},
 	meatType = "",
@@ -26,7 +26,7 @@ boss_one = Creature:new {
 	diet = HERBIVORE,
 	scale = 1.4,
 
-	templates = {"object/mobile/ep3/ep3_commander_khrask.iff"},
+	templates = {"object/mobile/dressed_padawan_male_human_01.iff"},
 		lootGroups = {
 		{
 			groups = {
@@ -163,12 +163,12 @@ boss_one = Creature:new {
 				lootChance = 5000000,
 		},
 	},
-	primaryWeapon = "geonosian_weapons",
-	secondaryWeapon = "rebel_sword",
+	primaryWeapon = "light_jedi_weapons",
+	secondaryWeapon = "light_jedi_weapons",
 	conversationTemplate = "",
 	
-	primaryAttacks = merge(brawlermaster,marksmanmaster,pistoleermaster,riflemanmaster),
-	secondaryAttacks = merge(fencermaster,swordsmanmaster,brawlermaster)
+	primaryAttacks = merge(lightsabermaster,forcepowermaster),
+	secondaryAttacks = merge(lightsabermaster,forcepowermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(boss_one, "boss_one")
