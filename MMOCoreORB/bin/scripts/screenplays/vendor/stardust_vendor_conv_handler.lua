@@ -84,12 +84,12 @@ function VendorConvoHandler:runScreenHandlers(pConvTemplate, pPlayer, pNpc, sele
 
 	if (screenID == "start_sale_backpacks") then
 		clonedScreen:setCustomDialogText(self.openSUItext)
-		self.vendorLogicType:openSUIBackpacks(pPlayer)
+		StardustMiscellaneousVendorLogic:openSUIMiscellaneous(pPlayer)
 	end
 
 	if (screenID == "start_sale_segment_aw") then
 		clonedScreen:setCustomDialogText(self.openSUItext)
-		self.vendorLogicType:openSUIArmorweaveSegments(pPlayer)
+		StardustAWSEGVendorLogic:openSUIArmorweaveSegments(pPlayer)
 	end
 
 	if (screenID == "start_sale_schematic_aw") then
@@ -99,7 +99,7 @@ function VendorConvoHandler:runScreenHandlers(pConvTemplate, pPlayer, pNpc, sele
 
 	if (screenID == "start_sale_segment_as") then
 		clonedScreen:setCustomDialogText(self.openSUItext)
-		self.vendorLogicType:openSUIArmorsmithSegments(pPlayer)
+		StardustASSEGVendorLogic:openSUIArmorsmithSegments(pPlayer)
 	end
 
 	if (screenID == "start_sale_schematic_as") then
@@ -108,13 +108,13 @@ function VendorConvoHandler:runScreenHandlers(pConvTemplate, pPlayer, pNpc, sele
 	end
 
 	if (screenID == "buy_weapons") then
-		clonedScreen:setCustomDialogText(self.underConstruction)
-		--self.vendorLogicType:openSUIArmorweaveSchematics(pPlayer)
+		clonedScreen:setCustomDialogText(self.openSUItext)
+		StardustWeaponVendorLogic:openSUIweapons(pPlayer)
 	end
 
 	if (screenID == "buy_vehicles") then
-		clonedScreen:setCustomDialogText(self.underConstruction)
-		--self.vendorLogicType:openSUIArmorweaveSchematics(pPlayer)
+		clonedScreen:setCustomDialogText(self.openSUItext)
+		StardustVehicleVendorLogic:openSUIvehicles(pPlayer)
 	end
 	if (screenID == "information_first") then
 		clonedScreen:setCustomDialogText(self.informationFirstDialog)
@@ -148,14 +148,14 @@ StardustVendorConvoHandler = VendorConvoHandler:new {
 	buyBackpacks = "I am interested in some new backpacks.",
 	buyArmorAWDialog = "This is what I have available for Armorweaving.",
 	buyArmorASDialog = "This is what I have available for Armorsmithing.",
-	buyBackpacksDialog = "This is what I have available for backpacks and assorted loot.",
+	buyBackpacksDialog = "This is what I have available for backpacks and miscellaneous items.",
 	saleOption_buy_armor_as = "I am interested in Armorsmithing Schematics",
 	saleOption_buy_armor_aw =  "I am interested in Armorweaving Schematics",
     saleOption_segment_aw = "Armorweaving Segment Schematics",
 	saleOption_schematic_aw = "Armorweaving Clothing Schematics",
 	saleOption_segment_as = "Armorsmithing Segment Schematics",
 	saleOption_schematic_as = "Armorsmithing Schematics",
-	saleOption_backpacks = "Backpacks and loot!",
+	saleOption_backpacks = "Show me what you got!",
 	openSUItext = "Take your time and stay close.",
 	saleDialog = "Okay, here's what I have for sale.",
 	--Player selection to get vendor information, vendor dialog.
