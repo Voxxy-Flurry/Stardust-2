@@ -8,7 +8,7 @@ nightsister_shards = {
 	craftingValues = {
 		{"armor_special_type",0,0,0},
 		{"armor_effectiveness",2,8,10},
-		{"useCount",1,11,0},
+		{"useCount",1,22,0},
 	},
 	customizationStringNames = {},
 	customizationValues = {}
