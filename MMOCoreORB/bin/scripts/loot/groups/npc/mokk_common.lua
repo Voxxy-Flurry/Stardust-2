@@ -5,7 +5,10 @@ mokk_common = {
 	minimumLevel = 0,
 	maximumLevel = 0,
 	lootItems = {
-		{itemTemplate = "mokk_blood", weight = 10000000},
+		{itemTemplate = "mokk_blood", weight = 2500000},
+		{itemTemplate = "mokk_hides", weight = 2500000},
+		{itemTemplate = "spear_rack_schematic", weight = 2500000},
+		{groupTemplate = "painting_winged_quenker", weight = 2500000}
 	}
 }
 
