@@ -5,7 +5,10 @@ dantari_common = {
 	minimumLevel = 0,
 	maximumLevel = 0,
 	lootItems = {
-		{itemTemplate = "dantari_blood", weight = 10000000},
+		{itemTemplate = "dantari_blood", weight = 2500000},
+		{itemTemplate = "dantari_hides", weight = 2500000},
+		{itemTemplate = "spear_rack_schematic", weight = 2500000},
+		{groupTemplate = "painting_winged_quenker", weight = 2500000}
 	}
 }
 
