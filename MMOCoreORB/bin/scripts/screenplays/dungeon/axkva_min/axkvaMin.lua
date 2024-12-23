@@ -34,7 +34,12 @@ function axkvaMin:activate(pPlayer)
 	   CreatureObject(pPlayer):sendSystemMessage("That instance is currently occupied, please try a different instance.")
 	   return false
 	end   
-	   
+
+  if (CreatureObject(pPlayer):isGrouped() and CreatureObject(pPlayer):getGroupSize() > 10)	then   
+    CreatureObject(pPlayer):sendSystemMessage("Your Group is too large. Max (10).")
+    print("AckvaMin: groupSize too large.  Canceling initialization.")
+    return false
+  end
   
   local paxkvaMin = self:getBuildingObject()
   

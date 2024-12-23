@@ -39,7 +39,7 @@ function exarKun:activate(pPlayer)
 	end   
 
   if (CreatureObject(pPlayer):isGrouped() and CreatureObject(pPlayer):getGroupSize() > 10)	then   
-    CreatureObject(pPlayer):sendSystemMessage("Your Group is too large try kicking the newbs out and try again. Max (10).")
+    CreatureObject(pPlayer):sendSystemMessage("Your Group is too large. Max (10).")
     print("exarKun: groupSize too large.  Canceling initialization.")
     return false
   end
