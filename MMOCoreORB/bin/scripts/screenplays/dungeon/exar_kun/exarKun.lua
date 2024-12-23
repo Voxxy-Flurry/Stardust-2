@@ -25,6 +25,7 @@ end
 
 
 function exarKun:activate(pPlayer)
+  
 	if (not isZoneEnabled("yavin4")) then
 		CreatureObject(pPlayer):sendSystemMessage("That area is currently unavailable. Please try again later.") 
 		print("exarKun: Instance unavailable, Yavin4 is disabled.")
@@ -36,8 +37,13 @@ function exarKun:activate(pPlayer)
 	   print("exarKun: Instance occupied error.  Canceling initialization.")
 	   return false
 	end   
-	   
-  
+
+  if (CreatureObject(pPlayer):isGrouped() and CreatureObject(pPlayer):getGroupSize() > 10)	then   
+    CreatureObject(pPlayer):sendSystemMessage("Your Group is too large try kicking the newbs out and try again. Max (10).")
+    print("exarKun: groupSize too large.  Canceling initialization.")
+    return false
+  end
+
   local pExarKun = self:getBuildingObject()
   
   writeData("exarKunStartTime", os.time()) 
