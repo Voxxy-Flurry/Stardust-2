@@ -462,6 +462,7 @@ includeFile("groups/armor/rebel_assault.lua")
 -- New Weapons  Master Groups
 includeFile("groups/weapon/ranged/master_carbines.lua")
 includeFile("groups/weapon/ranged/master_rifles.lua")
+includeFile("groups/weapon/ranged/ranged_weapons.lua")
 includeFile("groups/weapon/ranged/master_pistols.lua")
 includeFile("groups/weapon/melee/master_2h_swords.lua")
 includeFile("groups/weapon/melee/master_polearms.lua")
