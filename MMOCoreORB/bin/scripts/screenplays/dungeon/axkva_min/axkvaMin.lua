@@ -34,7 +34,12 @@ function axkvaMin:activate(pPlayer)
 	   CreatureObject(pPlayer):sendSystemMessage("That instance is currently occupied, please try a different instance.")
 	   return false
 	end   
-	   
+
+  if (CreatureObject(pPlayer):isGrouped() and CreatureObject(pPlayer):getGroupSize() >= 11)	then   
+    CreatureObject(pPlayer):sendSystemMessage("Your Group is too large. Max (10).")
+    print("AckvaMin: groupSize too large.  Canceling initialization.")
+    return false
+  end
   
   local paxkvaMin = self:getBuildingObject()
   
@@ -55,7 +60,8 @@ function axkvaMin:activate(pPlayer)
 			end
 		end
 	end
-	
+
+  --spawnSceneObject("yavin4", "object/tangible/gravestone/gravestone01.iff", -45.2, 7.9, -6.5, 480000333, math.rad(-1) ) -- attempt at exit button
 	createEvent(100, "axkvaMin", "spawnCheck", pPlayer, "")
 	createEvent(100, "axkvaMin", "spawnBossOneCheck", pPlayer, "")
 	
