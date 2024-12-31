@@ -1449,6 +1449,30 @@ includeFile("items/loot_schematic/rebel_house_loot_schematic.lua")
 includeFile("items/loot_schematic/relaxation_house_loot_schematic.lua")
 includeFile("items/loot_schematic/sith_house_loot_schematic.lua")
 
+--Tusken Clothing Schematics
+includeFile("items/loot_schematic/tusken_clothing/bandolier_tusken_raider_s01.lua")
+includeFile("items/loot_schematic/tusken_clothing/bandolier_tusken_raider_s02.lua")
+includeFile("items/loot_schematic/tusken_clothing/bandolier_tusken_raider_s03.lua")
+
+includeFile("items/loot_schematic/tusken_clothing/robe_tusken_raider_s01_crafted.lua")
+includeFile("items/loot_schematic/tusken_clothing/robe_tusken_raider_s01_armored.lua")
+includeFile("items/loot_schematic/tusken_clothing/robe_tusken_raider_s02_crafted.lua")
+includeFile("items/loot_schematic/tusken_clothing/robe_tusken_raider_s02_armored.lua")
+
+includeFile("items/loot_schematic/tusken_clothing/bracer_l_tusken_raider_crafted.lua")
+includeFile("items/loot_schematic/tusken_clothing/bracer_l_tusken_raider_armored.lua")
+includeFile("items/loot_schematic/tusken_clothing/bracer_r_tusken_raider_crafted.lua")
+includeFile("items/loot_schematic/tusken_clothing/bracer_r_tusken_raider_armored.lua")
+
+includeFile("items/loot_schematic/tusken_clothing/hat_tusken_raider_crafted.lua")
+includeFile("items/loot_schematic/tusken_clothing/hat_tusken_raider_armored.lua")
+
+includeFile("items/loot_schematic/tusken_clothing/boots_tusken_raider_crafted.lua")
+includeFile("items/loot_schematic/tusken_clothing/boots_tusken_raider_armored.lua")
+
+includeFile("items/loot_schematic/tusken_clothing/gloves_tusken_raider_crafted.lua")
+includeFile("items/loot_schematic/tusken_clothing/belt_tusken_raider_crafted.lua")
+
 -- Clone Armor 
 includeFile("items/armor/armor_clone_trooper_imperial_s01_gloves.lua")
 includeFile("items/armor/armor_clone_trooper_imperial_s01_bicep_l.lua")
