@@ -27,6 +27,19 @@ tusken_king_guard = Creature:new {
 
 	templates = {"object/mobile/tusken_raider.iff"},
 	lootGroups = {
+		{
+			groups = {
+				{group = "tusken_clothing_schematics", chance = 2500000},
+				{group = "tusken_common", chance = 7500000},
+			},
+			lootChance = 1000000,
+		},
+		{
+			groups = {
+				{group = "token_stardust", chance = 10000000}
+			},
+				lootChance = 100000,
+		},
 	},
 	
 	primaryWeapon = "tusken_ranged",

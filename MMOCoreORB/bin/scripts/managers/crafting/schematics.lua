@@ -2035,6 +2035,12 @@ schematics = {
   {path="object/draft_schematic/armored_clothing/hat_invis_armored.iff"},
   {path="object/draft_schematic/armored_clothing/hat_s04_armored.iff"},
   {path="object/draft_schematic/armored_clothing/hat_s10_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/clothing_hat_twilek_s01_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/clothing_hat_twilek_s02_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/clothing_hat_twilek_s03_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/clothing_hat_twilek_s04_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/clothing_hat_twilek_s05_armored.iff"},
+
   
   {path="object/draft_schematic/clothing/clothing_hat_invis.iff"},  
    
@@ -2116,6 +2122,30 @@ schematics = {
   {path="object/draft_schematic/armor/armor_segment_armor_heat.iff"},
   {path="object/draft_schematic/armor/armor_segment_armor_cold.iff"},
   {path="object/draft_schematic/armor/armor_segment_armor_blast.iff"},
+
+  --Tusken Raider Clothing
+  ------------------------------------------------------------------
+
+  {path="object/draft_schematic/armored_clothing/boots_tusken_raider_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/bracer_l_tusken_raider_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/bracer_r_tusken_raider_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/robe_tusken_raider_s01_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/robe_tusken_raider_s02_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/hat_tusken_raider_armored.iff"},
+
+  {path="object/draft_schematic/clothing/custom/bandolier_tusken_raider_bag_s01.iff"},
+  {path="object/draft_schematic/clothing/custom/bandolier_tusken_raider_bag_s02.iff"},
+  {path="object/draft_schematic/clothing/custom/bandolier_tusken_raider_bag_s03.iff"},
+  {path="object/draft_schematic/clothing/custom/boots_tusken_raider_crafted.iff"},
+  {path="object/draft_schematic/clothing/custom/gloves_tusken_raider_crafted.iff"},
+  {path="object/draft_schematic/clothing/custom/bracer_l_tusken_raider_crafted.iff"},
+  {path="object/draft_schematic/clothing/custom/bracer_r_tusken_raider_crafted.iff"},
+  {path="object/draft_schematic/clothing/custom/belt_tusken_raider_crafted.iff"},
+  {path="object/draft_schematic/clothing/custom/hat_tusken_raider_crafted.iff"},
+  {path="object/draft_schematic/clothing/custom/robe_tusken_raider_s01_crafted.iff"},
+  {path="object/draft_schematic/clothing/custom/robe_tusken_raider_s02_crafted.iff"},
+
+  ------------------------------------------------------------------
   
   -- New Furniture Schematics
   ------------------------------------------------------------------

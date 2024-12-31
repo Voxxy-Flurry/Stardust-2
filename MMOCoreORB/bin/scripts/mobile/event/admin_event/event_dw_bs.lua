@@ -39,7 +39,7 @@ event_dw_bs = Creature:new {
 				{group = "jetpack_base", chance = 50000},
 				{group = "wearables_common", chance = 500000},
 				{group = "wearables_uncommon", chance = 500000}
-			}
+			},
 				lootChance = 10000000,
 		},
 		{
@@ -65,7 +65,7 @@ event_dw_bs = Creature:new {
 				{group = "jetpack_base", chance = 50000},
 				{group = "wearables_common", chance = 500000},
 				{group = "wearables_uncommon", chance = 500000}
-			}
+			},
 				lootChance = 10000000,
 		}
 	},

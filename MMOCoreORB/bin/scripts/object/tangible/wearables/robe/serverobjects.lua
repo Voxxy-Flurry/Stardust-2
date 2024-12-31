@@ -69,6 +69,8 @@ includeFile("tangible/wearables/robe/robe_s18.lua")
 includeFile("tangible/wearables/robe/robe_s27.lua")
 includeFile("tangible/wearables/robe/robe_tusken_raider_s01.lua")
 includeFile("tangible/wearables/robe/robe_tusken_raider_s02.lua")
+includeFile("tangible/wearables/robe/robe_tusken_raider_s01_crafted.lua")
+includeFile("tangible/wearables/robe/robe_tusken_raider_s02_crafted.lua")
 
 -- New Crafted Jedi Robes
 
