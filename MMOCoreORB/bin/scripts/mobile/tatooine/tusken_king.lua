@@ -30,56 +30,60 @@ tusken_king = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "power_crystals", chance = 1000000},
-				{group = "lok_track", chance = 1000000},
-				{group = "veteran_rewards_630_days", chance = 1000000},
-				{group = "veteran_rewards_720_days", chance = 1000000},
-				{group = "melee_weapons", chance = 1000000},
+				{group = "power_crystals", chance = 857143},
+				{group = "lok_track", chance = 857143},
+				{group = "veteran_rewards_630_days", chance = 857143},
+				{group = "veteran_rewards_720_days", chance = 857143},
+				{group = "melee_weapons", chance = 857143},
 				{group = "armor_attachments", chance = 2000000},
 				{group = "clothing_attachments", chance = 2000000},
-				{group = "nge_houses_all", chance = 1000000}
+				{group = "tusken_clothing_schematics", chance = 857143},
+				{group = "nge_houses_all", chance = 857143}
 			},
 				lootChance = 10000000,
 		},
 		
 		{
 			groups = {
-				{group = "power_crystals", chance = 1000000},
-				{group = "lok_track", chance = 1000000},
-				{group = "veteran_rewards_630_days", chance = 1000000},
-				{group = "veteran_rewards_720_days", chance = 1000000},
-				{group = "melee_weapons", chance = 1000000},
+				{group = "power_crystals", chance = 857143},
+				{group = "lok_track", chance = 857143},
+				{group = "veteran_rewards_630_days", chance = 857143},
+				{group = "veteran_rewards_720_days", chance = 857143},
+				{group = "melee_weapons", chance = 857143},
 				{group = "armor_attachments", chance = 2000000},
 				{group = "clothing_attachments", chance = 2000000},
-				{group = "nge_houses_all", chance = 1000000}
+				{group = "tusken_clothing_schematics", chance = 857143},
+				{group = "nge_houses_all", chance = 857143}
 			},
 				lootChance = 7500000,
 		},
 		
 		{
 			groups = {
-				{group = "power_crystals", chance = 1000000},
-				{group = "lok_track", chance = 1000000},
-				{group = "veteran_rewards_630_days", chance = 1000000},
-				{group = "veteran_rewards_720_days", chance = 1000000},
-				{group = "melee_weapons", chance = 1000000},
+				{group = "power_crystals", chance = 857143},
+				{group = "lok_track", chance = 857143},
+				{group = "veteran_rewards_630_days", chance = 857143},
+				{group = "veteran_rewards_720_days", chance = 857143},
+				{group = "melee_weapons", chance = 857143},
 				{group = "armor_attachments", chance = 2000000},
 				{group = "clothing_attachments", chance = 2000000},
-				{group = "nge_houses_all", chance = 1000000}
+				{group = "tusken_clothing_schematics", chance = 857143},
+				{group = "nge_houses_all", chance = 857143}
 			},
 				lootChance = 5000000,
 		},
 		
 		{
 			groups = {
-				{group = "power_crystals", chance = 1000000},
-				{group = "lok_track", chance = 1000000},
-				{group = "veteran_rewards_630_days", chance = 1000000},
-				{group = "veteran_rewards_720_days", chance = 1000000},
-				{group = "melee_weapons", chance = 1000000},
+				{group = "power_crystals", chance = 857143},
+				{group = "lok_track", chance = 857143},
+				{group = "veteran_rewards_630_days", chance = 857143},
+				{group = "veteran_rewards_720_days", chance = 857143},
+				{group = "melee_weapons", chance = 857143},
 				{group = "armor_attachments", chance = 2000000},
 				{group = "clothing_attachments", chance = 2000000},
-				{group = "nge_houses_all", chance = 1000000}
+				{group = "tusken_clothing_schematics", chance = 857143},
+				{group = "nge_houses_all", chance = 857143}
 			},
 				lootChance = 2500000,
 		},

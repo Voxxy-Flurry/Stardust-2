@@ -5219,3 +5219,90 @@ object_tangible_loot_loot_schematic_shared_armor_segment_armor_stun_schematic = 
 	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_stardust_backpack_schematic.iff"}
   ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_stardust_backpack_schematic, 
   "object/tangible/loot/loot_schematic/shared_stardust_backpack_schematic.iff")
+
+  --Tusken Raider Schematics
+  object_tangible_loot_loot_schematic_shared_belt_tusken_raider_crafted_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_belt_tusken_raider_crafted_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_belt_tusken_raider_crafted_schematic, 
+  "object/tangible/loot/loot_schematic/shared_belt_tusken_raider_crafted_loot_schematic.iff")
+
+  object_tangible_loot_loot_schematic_shared_gloves_tusken_raider_crafted_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_gloves_tusken_raider_crafted_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_gloves_tusken_raider_crafted_schematic, 
+  "object/tangible/loot/loot_schematic/shared_gloves_tusken_raider_crafted_loot_schematic.iff")
+
+  object_tangible_loot_loot_schematic_shared_bandolier_tusken_raider_bag_s01_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_bandolier_tusken_raider_s01_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_bandolier_tusken_raider_bag_s01_schematic, 
+  "object/tangible/loot/loot_schematic/shared_bandolier_tusken_raider_s01_loot_schematic.iff")
+
+  object_tangible_loot_loot_schematic_shared_bandolier_tusken_raider_bag_s02_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_bandolier_tusken_raider_s02_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_bandolier_tusken_raider_bag_s02_schematic, 
+  "object/tangible/loot/loot_schematic/shared_bandolier_tusken_raider_s02_loot_schematic.iff")
+
+  object_tangible_loot_loot_schematic_shared_bandolier_tusken_raider_bag_s03_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_bandolier_tusken_raider_s03_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_bandolier_tusken_raider_bag_s03_schematic, 
+  "object/tangible/loot/loot_schematic/shared_bandolier_tusken_raider_s03_loot_schematic.iff")
+
+  object_tangible_loot_loot_schematic_shared_boots_tusken_raider_crafted_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_boots_tusken_raider_crafted_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_boots_tusken_raider_crafted_schematic, 
+  "object/tangible/loot/loot_schematic/shared_boots_tusken_raider_crafted_loot_schematic.iff")
+
+  object_tangible_loot_loot_schematic_shared_bracer_r_tusken_raider_crafted_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_bracer_r_tusken_raider_crafted_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_bracer_r_tusken_raider_crafted_schematic, 
+  "object/tangible/loot/loot_schematic/shared_bracer_r_tusken_raider_crafted_loot_schematic.iff")
+
+  object_tangible_loot_loot_schematic_shared_bracer_l_tusken_raider_crafted_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_bracer_l_tusken_raider_crafted_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_bracer_l_tusken_raider_crafted_schematic, 
+  "object/tangible/loot/loot_schematic/shared_bracer_l_tusken_raider_crafted_loot_schematic.iff")
+
+  object_tangible_loot_loot_schematic_shared_hat_tusken_raider_crafted_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_hat_tusken_raider_crafted_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_hat_tusken_raider_crafted_schematic, 
+  "object/tangible/loot/loot_schematic/shared_hat_tusken_raider_crafted_loot_schematic.iff")
+
+  object_tangible_loot_loot_schematic_shared_robe_tusken_raider_s01_crafted_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_robe_tusken_raider_s01_crafted_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_robe_tusken_raider_s01_crafted_schematic, 
+  "object/tangible/loot/loot_schematic/shared_robe_tusken_raider_s01_crafted_loot_schematic.iff")
+
+  object_tangible_loot_loot_schematic_shared_robe_tusken_raider_s02_crafted_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_robe_tusken_raider_s02_crafted_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_robe_tusken_raider_s02_crafted_schematic, 
+  "object/tangible/loot/loot_schematic/shared_robe_tusken_raider_s02_crafted_loot_schematic.iff")
+
+  --Tusken Continued (Armored)
+  object_tangible_loot_loot_schematic_shared_boots_tusken_raider_armored_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_boots_tusken_raider_armored_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_boots_tusken_raider_armored_schematic, 
+  "object/tangible/loot/loot_schematic/shared_boots_tusken_raider_armored_loot_schematic.iff")
+
+  object_tangible_loot_loot_schematic_shared_bracer_r_tusken_raider_armored_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_bracer_r_tusken_raider_armored_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_bracer_r_tusken_raider_armored_schematic, 
+  "object/tangible/loot/loot_schematic/shared_bracer_r_tusken_raider_armored_loot_schematic.iff")
+
+  object_tangible_loot_loot_schematic_shared_bracer_l_tusken_raider_armored_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_bracer_l_tusken_raider_armored_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_bracer_l_tusken_raider_armored_schematic, 
+  "object/tangible/loot/loot_schematic/shared_bracer_l_tusken_raider_armored_loot_schematic.iff")
+
+  object_tangible_loot_loot_schematic_shared_hat_tusken_raider_armored_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_hat_tusken_raider_armored_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_hat_tusken_raider_armored_schematic, 
+  "object/tangible/loot/loot_schematic/shared_hat_tusken_raider_armored_loot_schematic.iff")
+
+  object_tangible_loot_loot_schematic_shared_robe_tusken_raider_s01_armored_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_robe_tusken_raider_s01_armored_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_robe_tusken_raider_s01_armored_schematic, 
+  "object/tangible/loot/loot_schematic/shared_robe_tusken_raider_s01_armored_loot_schematic.iff")
+
+  object_tangible_loot_loot_schematic_shared_robe_tusken_raider_s02_armored_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_robe_tusken_raider_s02_armored_loot_schematic.iff"}
+  ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_robe_tusken_raider_s02_armored_schematic, 
+  "object/tangible/loot/loot_schematic/shared_robe_tusken_raider_s02_armored_loot_schematic.iff")

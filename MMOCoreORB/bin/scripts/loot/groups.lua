@@ -379,6 +379,7 @@ includeFile("groups/wearables/wearables_uncommon.lua")
 
 -- custom items
 includeFile("groups/named_crystals.lua")
+includeFile("groups/schematic/tusken_clothing/tusken_clothing_schematics.lua")
 
 includeFile("groups/npc/meatlump_melee_components.lua")
 includeFile("groups/npc/meatlump_ranged_components.lua")

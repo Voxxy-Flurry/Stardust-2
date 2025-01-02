@@ -212,3 +212,22 @@ includeFile("tangible/loot/loot_schematic/armor_segment_armor_cold_schematic.lua
 includeFile("tangible/loot/loot_schematic/armor_segment_armor_heat_schematic.lua")
 
 includeFile("tangible/loot/loot_schematic/stardust_backpack_schematic.lua")
+
+includeFile("tangible/loot/loot_schematic/belt_tusken_raider_crafted_schematic.lua")
+includeFile("tangible/loot/loot_schematic/gloves_tusken_raider_crafted_schematic.lua")
+includeFile("tangible/loot/loot_schematic/bandolier_tusken_raider_bag_s01_schematic.lua")
+includeFile("tangible/loot/loot_schematic/bandolier_tusken_raider_bag_s02_schematic.lua")
+includeFile("tangible/loot/loot_schematic/bandolier_tusken_raider_bag_s03_schematic.lua")
+includeFile("tangible/loot/loot_schematic/boots_tusken_raider_crafted_schematic.lua")
+includeFile("tangible/loot/loot_schematic/bracer_l_tusken_raider_crafted_schematic.lua")
+includeFile("tangible/loot/loot_schematic/bracer_r_tusken_raider_crafted_schematic.lua")
+includeFile("tangible/loot/loot_schematic/hat_tusken_raider_crafted_schematic.lua")
+includeFile("tangible/loot/loot_schematic/robe_tusken_raider_s01_crafted_schematic.lua")
+includeFile("tangible/loot/loot_schematic/robe_tusken_raider_s02_crafted_schematic.lua")
+
+includeFile("tangible/loot/loot_schematic/boots_tusken_raider_armored_schematic.lua")
+includeFile("tangible/loot/loot_schematic/bracer_l_tusken_raider_armored_schematic.lua")
+includeFile("tangible/loot/loot_schematic/bracer_r_tusken_raider_armored_schematic.lua")
+includeFile("tangible/loot/loot_schematic/hat_tusken_raider_armored_schematic.lua")
+includeFile("tangible/loot/loot_schematic/robe_tusken_raider_s01_armored_schematic.lua")
+includeFile("tangible/loot/loot_schematic/robe_tusken_raider_s02_armored_schematic.lua")
