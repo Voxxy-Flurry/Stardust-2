@@ -26,7 +26,7 @@ lorosh = Creature:new {
 	diet = HERBIVORE,
 	scale = 1.1,
 
-	templates = {""}, -- Boss. Needs a good model.
+	templates = {"object/mobile/dressed_dark_side_savage.iff"}, -- Placeholder, need a new one.
 	lootGroups = {}, -- Will decide boss loot, potential new items?
 	
 	primaryWeapon = "", -- Unsure on weapon type yet.

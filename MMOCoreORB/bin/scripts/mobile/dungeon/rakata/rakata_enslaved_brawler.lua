@@ -26,7 +26,7 @@ rakata_enslaved_brawler = Creature:new {
 	diet = HERBIVORE,
 	scale = 1.1,
 
-	templates = {""}, -- Needs a Model
+	templates = {"object/mobile/dressed_dark_side_savage.iff"}, -- Placeholder, need a new one.
 	lootGroups = {
 	},
 	
