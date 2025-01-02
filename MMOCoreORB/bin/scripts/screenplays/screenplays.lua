@@ -686,13 +686,14 @@ includeFile("sphelper.lua")
 --  Start all Stardust Content Here.
 
 -- Vendors
-includeFile("vendor/stardust_vendor_logic.lua")
 includeFile("vendor/stardust_vendor_logic_misc.lua")
 includeFile("vendor/stardust_vendor_logic_segments_aw.lua")
 includeFile("vendor/stardust_vendor_logic_segments_as.lua")
 includeFile("vendor/stardust_vendor_logic_weapons.lua")
 includeFile("vendor/stardust_vendor_logic_vehicles.lua")
+includeFile("vendor/stardust_gambling_logic.lua")
 includeFile("vendor/stardust_vendor_conv_handler.lua")
+includeFile("vendor/stardust_gambling_conv_handler.lua")
 includeFile("vendor/stardust_vendor_spawn.lua")
 
 -- Chandrila

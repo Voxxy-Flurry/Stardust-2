@@ -2,6 +2,7 @@ includeFile("conversation.lua")
 
 -- Custom Vendors
 includeFile("conversations/vendor/stardust_vendor_conv.lua")
+includeFile("conversations/vendor/stardust_gambling_conv.lua")
 
 -- ** THEMEPARKS **
 
