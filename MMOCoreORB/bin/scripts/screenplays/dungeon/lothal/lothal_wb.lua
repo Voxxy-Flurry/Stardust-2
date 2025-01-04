@@ -254,6 +254,11 @@ function lothal_wb:awardToken(bossObject)
                 else
                     CreatureObject(currentPlayer):sendSystemMessage("You did not receive a boss token because your inventory is full.")
                 end
+
+				local pGhost = CreatureObject(currentPlayer):getPlayerObject()
+                if (pGhost ~= nil and not PlayerObject(pGhost):hasBadge(165)) then
+                    PlayerObject(pGhost):awardBadge(165)
+                end
             end
         end
     end

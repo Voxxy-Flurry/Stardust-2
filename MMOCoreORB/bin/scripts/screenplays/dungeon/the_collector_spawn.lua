@@ -511,6 +511,11 @@ function the_collector_spawn:awardToken(bossObject)
                 else
                     CreatureObject(currentPlayer):sendSystemMessage("You did not receive a boss token because your inventory is full.")
                 end
+
+				local pGhost = CreatureObject(currentPlayer):getPlayerObject()
+                if (pGhost ~= nil and not PlayerObject(pGhost):hasBadge(166)) then
+                    PlayerObject(pGhost):awardBadge(166)
+                end
             end
         end
     end

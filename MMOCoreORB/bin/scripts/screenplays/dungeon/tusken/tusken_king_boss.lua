@@ -162,6 +162,11 @@ function tusken_king_bossScreenplay:awardToken(bossObject)
                 else
                     CreatureObject(currentPlayer):sendSystemMessage("You did not receive a boss token because your inventory is full.")
                 end
+
+				local pGhost = CreatureObject(currentPlayer):getPlayerObject()
+                if (pGhost ~= nil and not PlayerObject(pGhost):hasBadge(159)) then
+                    PlayerObject(pGhost):awardBadge(159)
+                end
             end
         end
     end
