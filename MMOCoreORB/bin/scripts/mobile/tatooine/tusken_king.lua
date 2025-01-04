@@ -26,7 +26,7 @@ tusken_king = Creature:new {
 	diet = HERBIVORE,
 	scale = 1.5,	
 
-	templates = {"object/mobile/tusken_raider.iff"},
+	templates = {"object/mobile/tusken_king.iff"},
 	lootGroups = {
 		{
 			groups = {
