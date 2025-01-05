@@ -1,5 +1,5 @@
 boss_one = Creature:new {
-	customName = "Faaaaaaaaarkin (Event)",
+	customName = "Mannax (Event)",
 	socialGroup = "kun",
 	faction = "kun",
 	level = 300,
@@ -26,7 +26,7 @@ boss_one = Creature:new {
 	diet = HERBIVORE,
 	scale = 1.4,
 
-	templates = {"object/mobile/dressed_padawan_male_human_01.iff"},
+	templates = {"object/mobile/azure_cabal_fillian.iff"},
 		lootGroups = {
 		{
 			groups = {
@@ -153,6 +153,12 @@ boss_one = Creature:new {
 		{
 			groups = {
 				{group = "experimental_spider", chance = 10000000}
+			},
+				lootChance = 5000000,
+		},
+		{
+			groups = {
+				{group = "tusken_clothing_schematics", chance = 10000000}
 			},
 				lootChance = 5000000,
 		},

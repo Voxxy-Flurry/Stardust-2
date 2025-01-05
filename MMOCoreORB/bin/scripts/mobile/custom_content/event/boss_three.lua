@@ -1,5 +1,5 @@
 boss_three = Creature:new {
-	customName = "Vock See (Event)",
+	customName = "Levarris (Event)",
 	socialGroup = "kun",
 	faction = "kun",
 	level = 300,
@@ -26,7 +26,7 @@ boss_three = Creature:new {
 	diet = HERBIVORE,
 	scale = 1.5,	
 
-	templates = {"object/mobile/wod_second_sister.iff"},
+	templates = {"object/mobile/dressed_dark_jedi_master_male_human_03.iff"},
 	lootGroups = {
 		{
 			groups = {
@@ -173,6 +173,12 @@ boss_three = Creature:new {
 		{
 			groups = {
 				{group = "experimental_spider", chance = 10000000}
+			},
+				lootChance = 5000000,
+		},
+		{
+			groups = {
+				{group = "tusken_clothing_schematics", chance = 10000000}
 			},
 				lootChance = 5000000,
 		},

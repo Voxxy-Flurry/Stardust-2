@@ -1,5 +1,5 @@
 boss_two = Creature:new {
-	customName = "Trod's Juggernaut (Event)",
+	customName = "Jar Jar Binks (Event)",
 	socialGroup = "kun",
 	faction = "kun",
 	level = 300,
@@ -26,7 +26,7 @@ boss_two = Creature:new {
 	diet = HERBIVORE,
 	scale = 1.4,
 
-	templates = {"object/mobile/npe/npe_droid_i10_probe.iff"},
+	templates = {"object/mobile/gungan_male.iff"},
 		lootGroups = {
 		{
 			groups = {
@@ -153,6 +153,12 @@ boss_two = Creature:new {
 		{
 			groups = {
 				{group = "experimental_spider", chance = 10000000}
+			},
+				lootChance = 5000000,
+		},
+		{
+			groups = {
+				{group = "tusken_clothing_schematics", chance = 10000000}
 			},
 				lootChance = 5000000,
 		},
