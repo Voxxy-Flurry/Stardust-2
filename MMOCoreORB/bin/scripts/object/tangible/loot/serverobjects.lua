@@ -56,3 +56,4 @@ includeFile("tangible/loot/tool/serverobjects.lua")
 -- Server Objects
 includeFile("tangible/loot/base/serverobjects.lua")
 includeFile("tangible/loot/creature_loot/serverobjects.lua")
+includeFile("tangible/loot/lewt_chests/serverobjects.lua")
