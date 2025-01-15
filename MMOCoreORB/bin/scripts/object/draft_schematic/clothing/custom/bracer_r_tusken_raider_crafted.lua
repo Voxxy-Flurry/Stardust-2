@@ -7,7 +7,7 @@ object_draft_schematic_clothing_custom_bracer_r_tusken_raider_crafted = object_d
    craftingToolTab = 8, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1, 
    size = 2, 
-
+   factoryCrateSize = 0,
    xpType = "crafting_general", 
    xp = 30, 
 
@@ -22,7 +22,7 @@ object_draft_schematic_clothing_custom_bracer_r_tusken_raider_crafted = object_d
    ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n","craft_clothing_ingredients_n"},
    ingredientTitleNames = {"hardware", "load_bearing_harness", "reinforcement", "hardware_and_attachments"},
    ingredientSlotType = {1, 0, 1, 1},
-   resourceTypes = {"object/tangible/component/clothing/shared_metal_fasteners.iff", "hide_wooly_tatooine", "object/tangible/component/clothing/shared_fiberplast_panel.iff", "object/tangible/component/clothing/shared_fiberplast_panel.iff"},
+   resourceTypes = {"object/tangible/component/clothing/shared_metal_fasteners.iff", "hide_wooly_tatooine", "object/tangible/component/clothing/shared_reinforced_fiber_panels.iff", "object/tangible/component/clothing/shared_reinforced_fiber_panels.iff"},
    resourceQuantities = {3, 65, 1, 2},
    contribution = {100, 100, 100, 100},
 

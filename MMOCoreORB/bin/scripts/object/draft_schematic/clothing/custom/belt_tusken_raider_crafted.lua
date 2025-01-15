@@ -7,7 +7,7 @@ object_draft_schematic_clothing_custom_belt_tusken_raider_crafted = object_draft
    craftingToolTab = 8, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1, 
    size = 2, 
-
+   factoryCrateSize = 0,
    xpType = "crafting_general", 
    xp = 30, 
 
