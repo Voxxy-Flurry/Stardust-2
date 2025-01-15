@@ -7,7 +7,7 @@ object_draft_schematic_clothing_custom_bandolier_tusken_raider_bag_s03 = object_
    craftingToolTab = 8, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1, 
    size = 2, 
-
+   factoryCrateSize = 0,
    xpType = "crafting_general", 
    xp = 30, 
 
